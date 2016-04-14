@@ -7,7 +7,6 @@ form {
     border: 0;
     outline: 0;
     background: transparent;
-    border-bottom: 1px solid grey;
     font-size: 2.0em;
     line-height: 1.9;
     font-weight: 300;
@@ -18,7 +17,8 @@ form {
 }
 
 .listItem {
-  font-size: 2em;
+  font-size: 1.5em;
+  min-width: 200px;
 }
 
 .fieldLabel {
@@ -37,7 +37,15 @@ form {
   color: #1689e5;
   font-weight: 300;
   padding: 0px;
-  margin-top: 0px;
+  margin-top: -10px;
+}
+
+#input1, #input2 {
+  text-transform: lowercase;
+}
+
+#input2 {
+  min-width: 205px;
 }
 
 .getStartedBtn {
@@ -47,10 +55,11 @@ form {
   font-weight: 300;
   color: #ffffff;
   padding: 10px 40px;
+  border-radius: 5px;
 }
 
 .btn-group {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #d0d0d0;
 }
 
 .glyphicon-menu-down {
@@ -62,8 +71,16 @@ form {
 
 .dropdown-menu > li > a {
   color: #686868;
+  font-weight: 300;
 }
 
 .dropdown-menu > li > a:hover {
   color: #1689e5;
+}
+
+small {
+  font-size: 2.2em;
+  line-height: 1.9;
+  font-weight: 200;
+  color: #686868;
 }
