@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="project.js"></script>
+    <link rel="stylesheet" type= "text/css" href = "form.css"/>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="dropdown">
+      <form action="action_page.php">
+        <span class="fieldLabel">I am a </span>
+        <div class="btn-group">
+          <a class="btn dropdown-toggle" class="dlDropDown" data-toggle="dropdown" href="#">
+            <span class="glyphicon glyphicon-menu-down"></span>
+          </a>
+          <ul id="dropdown1" class="dropdown-menu">
+            <li class="listItem"><a href="#">Manufacturer</a></li>
+            <li class="listItem"><a href="#">Retailer</a></li>
+          </ul>
+        </div>
+        <span class="fieldLabel"> and I sell </span>
+        <div class="btn-group">
+          <a class="btn dropdown-toggle" class="dlDropDown" data-toggle="dropdown" href="#">
+            <span class="glyphicon glyphicon-menu-down"></span>
+          </a>
+          <ul id="dropdown2" class="dropdown-menu">
+            <li class="listItem"><a href="#">Apparel</a></li>
+            <li class="listItem"><a href="#">Consumer Goods</a></li>
+            <li class="listItem"><a href="#">Electronics</a></li>
+            <li class="listItem"><a href="#">Aero & Defense</a></li>
+            <li class="listItem"><a href="#">Industrial</a></li>
+          </ul>
+        </div></br></br>
+        <span class="fieldLabel">to customers in</span>
+        <div class="btn-group">
+          <a class="btn dropdown-toggle" class="dlDropDown" data-toggle="dropdown" href="#">
+            <span class="glyphicon glyphicon-menu-down"></span>
+          </a>
+          <ul id="dropdown3" class="dropdown-menu">
+            <li class="listItem"><a href="#">US & Canada</a></li>
+            <li class="listItem"><a href="#">EU</a></li>
+            <li class="listItem"><a href="#">Asia</a></li>
+            <li class="listItem"><a href="#">Rest of World</a></li>
+          </ul>
+        </div></br></br>
+        <input class="getStartedBtn" type="submit" value="Get Started">
+      </form>
+    </div>
+    <br><br>
+    <div class="dropdown">
+      <form action="action_page.php">
+        <span class="fieldLabel">I am a </span>
+        <input class="inputField" list="input1" name="input1">
+        <datalist id="input1">
+          <option value="Manufacturer">
+          <option value="Retailer">
+        </datalist>
+        <span class="fieldLabel"> and I sell </span>
+        <input class="inputField" list="input2" name="input2">
+        <datalist id="input2">
+          <option value="Apparel">
+          <option value="Consumer Goods">
+          <option value="Electronics">
+          <option value="Aero & Defense">
+          <option value="Industrial">
+        </datalist></br></br>
+        <span class="fieldLabel">to customers in</span>
+        <input class="inputField" list="input3" name="input3">
+        <datalist id="input3">
+          <option value="US & Canada">
+          <option value="EU">
+          <option value="Asia">
+          <option value="Rest of World">
+        </datalist></br></br>
+        <input class="getStartedBtn" type="submit" value="Get Started">
+      </form>
+    </div>
+  </body>
+</html>

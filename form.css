@@ -1,0 +1,57 @@
+form {
+  text-align: center;
+}
+
+.inputField {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid grey;
+    font-size: 2.0em;
+    line-height: 1.9;
+    font-weight: 300;
+    color: #686868;
+    text-align: center;
+    appearance: none;
+    background:
+}
+
+.listItem {
+  font-size: 2em;
+}
+
+.fieldLabel {
+  font-size: 2.2em;
+  line-height: 1.9;
+  font-weight: 200;
+  color: #686868;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dropdown-toggle {
+  font-size: 2em;
+  min-width: 200px;
+  text-align: center;
+}
+
+.getStartedBtn {
+  background-color: #7db900;
+  border: none;
+  font-size: 2em;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 10px 40px;
+}
+
+.btn-group {
+  border-bottom: 1px solid grey;
+}
+
+.glyphicon-menu-down {
+  color: #686868;
+  font-size: .5em;
+  text-align: right;
+  padding-left: 165px;
+}
