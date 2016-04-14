@@ -49,13 +49,14 @@ form {
 }
 
 .getStartedBtn {
-  background-color: #7db900;
+  background-color: #54B948;
+  border-color: #54B948;
   border: none;
-  font-size: 2em;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 300;
   color: #ffffff;
-  padding: 10px 40px;
-  border-radius: 5px;
+  padding: 5px 40px;
+  border-radius: 3px;
 }
 
 .btn-group {
