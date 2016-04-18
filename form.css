@@ -85,3 +85,90 @@ small {
   font-weight: 200;
   color: #686868;
 }
+
+#basicInfo {
+  font-weight: 100;
+}
+
+#subHeader {
+  color: #686868;
+  font-weight: 100;
+}
+
+label {
+  font-weight: 100;
+  color: #686868;
+}
+
+.form-group {
+  text-align: left;
+  padding-left; 10px;
+  font-weight: 100;
+}
+
+#firstName, #lastName, #email, #password {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+#firstName:focus, #lastName:focus, #email:focus, #password:focus {
+  border-bottom:2px solid #1689e5;
+}
+
+.btn-default {
+  float: left;
+  border-radius: 10px;
+}
+
+.infoBubble {
+    width:300px;
+    height:300px;
+    background-color: #1689e5;
+    border-radius: 50%;
+    position:absolute;
+    top:0;
+    right:10px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+
+.monster1 {
+  background-color: #1689e5;
+  height: 240px;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.monster2 {
+    background-color: #1d5a96;
+    width:300px;
+    height:300px;
+    left: 0;
+    bottom: 0;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#questions {
+  font-weight: 100;
+  font-size: 15px;
+
+}
+
+/*.monster {
+  background:blue;
+  height: 350px;
+  border-radius: 50%;
+  display:none;
+  left: 0;
+  bottom: 0;
+}
+
+.infoBubble {
+  height: 350px;
+  background-color: #1689e5;
+  border-radius: 50%;
+}*/
