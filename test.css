@@ -1,5 +1,5 @@
 /* This is for the custom progress bar */
-.progress {background: #ffffff; border: 5px solid #ffffff; border-radius: 3px; height: 46px; font-size: 18px;}
+.progress {background: #ffffff; border: 5px solid #ffffff; border-radius: 1px; height: 46px; font-size: 18px;}
 .progress-bar-custom {background: #ffffff);}
 
 
@@ -17,7 +17,7 @@ h4 {
   text-align: center;
 }
 
-/* "Your Plan" header panel */
+/* "Your Plan" header  collapsable panel */
 .panel-heading {
   height: 80px;
 }
@@ -36,6 +36,17 @@ h4 {
  padding: 36.8098px 1%;
 }
 
+.col-sm-6 {
+  border-right: 1px solid black;
+}
+
+
+a:hover {
+text-transform: uppercase;
+font-size: 20px;
+color: blue;
+}
+
 
 /* @@@@@@@@@@@@ Everything below this point is for the navbar @@@@@@@@@@@@  */
 
@@ -46,7 +57,7 @@ display: block;
 
 /* Panel height */
 .navbar-header {
-  height: 90px;
+  height: 80px;
 }
 
 .wrapper-dropdown-5 {
