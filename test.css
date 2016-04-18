@@ -1,5 +1,5 @@
-.progress {background: rgba(245, 245, 245, 1); border: 5px solid rgba(245, 245, 245, 1); border-radius: 3px; height: 16px;}
-.progress-bar-custom {background: rgba(66, 139, 202, 1);}
+.progress {background: #ffffff; border: 5px solid #ffffff; border-radius: 3px; height: 36px;}
+.progress-bar-custom {background: #ffffff);}
 
 .img-circle {
     border-radius: 50%;
@@ -13,6 +13,11 @@ h4 {
   font-weight: 100;
 }
 
+.iconDiv {
+  display: block;
+  float: left;
+
+}
 
 .mapDiv {
  background-color: #f9f9f9 ;
@@ -23,7 +28,7 @@ h4 {
  margin-left: 5%;
  margin-right: 5%;
  max-width: 300px;
- padding: 36.8098px 1%
+ padding: 36.8098px 1%;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -31,7 +36,7 @@ display: block;
 }
 
 .button {
-  text-align: right;
+  text-align: center;
 }
 
 .panel-heading {
@@ -48,7 +53,7 @@ display: block;
 
 .wrapper-dropdown-5 {
     /* Size & position */
-    position: relative;
+    position: absolute;
     width: 200px;
     margin: 0 auto;
     padding: 12px 15px;
@@ -56,7 +61,7 @@ display: block;
     /* Styles */
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.8);
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease-out;
@@ -84,7 +89,7 @@ display: block;
   /* Styles */
   background: #fff;
   border-radius: 0 0 5px 5px;
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid rgba(0,0,0,0.8);
   border-top: none;
   border-bottom: none;
   list-style: none;
@@ -128,7 +133,7 @@ display: block;
 
 .wrapper-dropdown-5.active {
     border-radius: 5px 5px 0 0;
-    background: #4cbeff;
+    /*background: #4cbeff;*/
     box-shadow: none;
     border-bottom: none;
     color: white;
