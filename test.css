@@ -1,10 +1,9 @@
-.progress {background: rgba(245, 245, 245, 1); border: 5px solid rgba(245, 245, 245, 1); border-radius: 3px; height: 16px;}
-.progress-bar-custom {background: rgba(66, 139, 202, 1);}
+/* This is for the custom progress bar */
+.progress {background: #ffffff; border: 5px solid #ffffff; border-radius: 1px; height: 46px; font-size: 18px;}
+.progress-bar-custom {background: #ffffff);}
 
-.img-circle {
-    border-radius: 50%;
-}
 
+/* Font weights for h1 and h4 tags */
 h1 {
   font-weight: 100;
 }
@@ -13,7 +12,18 @@ h4 {
   font-weight: 100;
 }
 
+/* This places the buttons for selction and reading more in the center */
+.button {
+  text-align: center;
+}
 
+/* "Your Plan" header  collapsable panel */
+.panel-heading {
+  height: 80px;
+}
+
+
+/* This is for the round map picture for results pages */
 .mapDiv {
  background-color: #f9f9f9 ;
  border-radius: 150px;
@@ -23,38 +33,42 @@ h4 {
  margin-left: 5%;
  margin-right: 5%;
  max-width: 300px;
- padding: 36.8098px 1%
+ padding: 36.8098px 1%;
 }
 
+.col-sm-6 {
+  border-right: 1px solid black;
+}
+
+
+a:hover {
+text-transform: uppercase;
+font-size: 20px;
+color: blue;
+}
+
+
+/* @@@@@@@@@@@@ Everything below this point is for the navbar @@@@@@@@@@@@  */
+
+/* This lets you hover over the dropdowns for functionality */
 .dropdown:hover .dropdown-menu {
 display: block;
 }
 
-.button {
-  text-align: right;
-}
-
-.panel-heading {
-  height: 90px;
-}
-
+/* Panel height */
 .navbar-header {
-  height: 90px;
-}
-
-#header_right {
-  text-align: right;
+  height: 80px;
 }
 
 .wrapper-dropdown-5 {
     /* Size & position */
-    position: relative;
+    position: absolute;
     width: 200px;
     margin: 0 auto;
     padding: 12px 15px;
 
     /* Styles */
-    background: #fff;
+    background: transparent;
     border-radius: 5px;
     box-shadow: 0 1px 0 rgba(0,0,0,0.2);
     cursor: pointer;
@@ -72,7 +86,7 @@ display: block;
     margin-top: -3px;
     border-width: 6px 6px 0 6px;
     border-style: solid;
-    border-color: #4cbeff transparent;
+    border-color: transparent;
 }
 .wrapper-dropdown-5 .dropdown {
 /* Size & position */
@@ -82,7 +96,7 @@ display: block;
   right: 0;
 
   /* Styles */
-  background: #fff;
+  background:transparent;
   border-radius: 0 0 5px 5px;
   border: 1px solid rgba(0,0,0,0.2);
   border-top: none;
@@ -102,7 +116,7 @@ display: block;
 .wrapper-dropdown-5 .dropdown li a {
     display: block;
     text-decoration: none;
-    color: #333;
+    color: transparent;
     padding: 10px 0;
     transition: all 0.3s ease-out;
     border-bottom: 1px solid #e6e8ea;
@@ -114,21 +128,21 @@ display: block;
 
 .wrapper-dropdown-5 .dropdown li i {
     margin-right: 5px;
-    color: inherit;
+    color: transparent;
     vertical-align: middle;
 }
 
 /* Hover state */
 
 .wrapper-dropdown-5 .dropdown li:hover a {
-    color: #57a9d9;
+    color: transparent;
 }
 
 /* Active state */
 
 .wrapper-dropdown-5.active {
     border-radius: 5px 5px 0 0;
-    background: #4cbeff;
+    /*background: #4cbeff;*/
     box-shadow: none;
     border-bottom: none;
     color: white;
