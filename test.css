@@ -1,6 +1,10 @@
 /* This is for the custom progress bar */
-.progress {background: #ffffff; border: 5px solid #ffffff; border-radius: 1px; height: 46px; font-size: 18px;}
-.progress-bar-custom {background: #ffffff);}
+.progress {
+  background: #ffffff; border: 5px solid #ffffff; border-radius: 1px; height: 38px; font-size: 18px;
+}
+.progress-bar-custom {
+  background: #ffffff);
+}
 
 
 /* Font weights for h1 and h4 tags */
