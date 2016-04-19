@@ -21,4 +21,8 @@ $(document).ready(function(){
     });
   });
 
+  $(".monster2").hover(function () {
+  $(".monster1").slideToggle("slow");
+  });
+
 });
