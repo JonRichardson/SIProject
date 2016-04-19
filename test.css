@@ -6,7 +6,6 @@
   background: #ffffff);
 }
 
-
 /* Font weights for h1 and h4 tags */
 h1 {
   font-weight: 100;
@@ -26,6 +25,9 @@ h4 {
   height: 80px;
 }
 
+.iconDiv {
+  display: inline-grid;
+}
 
 /* This is for the round map picture for results pages */
 .mapDiv {
@@ -44,13 +46,23 @@ h4 {
   border-right: 1px solid black;
 }
 
-
-a:hover {
-text-transform: uppercase;
-font-size: 20px;
-color: blue;
+.footer {
+  background-color: #2C2C2C;
+  color: green;
+  height: 45px;
 }
 
+
+td a:hover {
+text-transform: full-width;
+color: blue;
+text-decoration: none;
+}
+
+.slideTest:hover {
+  transform: translate(15px, 0);
+  transition: 0.5s transform;
+}
 
 /* @@@@@@@@@@@@ Everything below this point is for the navbar @@@@@@@@@@@@  */
 
