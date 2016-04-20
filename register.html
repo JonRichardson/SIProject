@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- This is the script for Ajax to run -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- These are the bootstrap scripts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- This is the script for javScript to run -->
     <script type="text/javascript" src="project.js"></script>
-    <link rel="stylesheet" type="text/css" href ="app.css"/>
+    <!-- This is the stylesheet for the registration form -->
     <link rel="stylesheet" type="text/css" href ="form.css"/>
+    <!-- This is the stylesheet for Source Intelligence -->
+    <link rel="stylesheet" type="text/css" href ="app.css"/>
+    <!-- This is the stylesheet for the navbars, progress bars and more -->
     <link rel="stylesheet" type="text/css" href="test.css">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
+    <!-- This is the navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-
           </button>
           <a  href="http://www.sourceintelligence.com/"><img src="si.png" alt="Source"  style="width:188px;height:74px;"></a>
         </div>
@@ -63,18 +69,18 @@
 
 <!-- Progress Bar -->
     <div class="progress">
-      <table style="width:120%">
+      <table style="width:110%; color: #187189">
           <tr>
             <td>Goal Recommendations</td>
             <td>Goal Review</td>
-            <td>Security & Submit</td>
+            <td style="text-align: center">Security & Submit</td>
           </tr>
       </table>
-        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
+        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
           <span class="sr-only"></span>
         </div>
     </div>
-
+<!-- This is the code for the slider pic on the registration form -->
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -131,5 +137,16 @@
         </div>
       </div>
     </div>
+
+    <!-- This is the sticky footer -->
+    <div class="footer navbar-fixed-bottom">
+          <table class="container" style="width: 60%; text-align: left;">
+            <p> <th><a href="http://www.sourceintelligence.com/privacy-policy/"> Privacy</a></th>
+                <th><a href="http://www.sourceintelligence.com/terms-of-use/"> Terms of Use</a></th>
+                <th><a href="http://www.sourceintelligence.com/about/"> About Us</a></th>
+                <th><a href="http://www.sourceintelligence.com/contact-us/"> Contact Us</a></th>
+            </p>
+          </table>
+        </div>
   </body>
 </html>
