@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Latest compiled and minified CSS -->
+    <!-- This is the stylesheet for Source Intelligence -->
     <link rel="stylesheet" type="text/css" href="app.css">
+    <!-- This is the our stylesheet -->
     <link rel="stylesheet" type="text/css" href="test.css">
+    <!-- This is the javaScript for Source Intelligence -->
     <script type="text/javascript" src="test.js"></script>
+    <!-- This is the script for jquery use -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <meta charset="utf-8">
@@ -19,21 +22,15 @@
     <!-- Bootstrap core CSS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- This is the stylesheet for Source Intelligence -->
-
   </head>
 
   <body>
+    <!-- This is the navbar for Source Intelligence -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-
           </button>
           <a  href="http://www.sourceintelligence.com/"><img src="si.png" alt="Source"  style="width:188px;height:74px;"></a>
         </div>
@@ -79,47 +76,62 @@
 </br>
 </br>
 </br>
-
-
-      <!-- The justified navigation menu is meant for single line per list item.
-           Multiple lines will require custom code not provided by Bootstrap. -->
-
-<!-- Progress Bar -->
+<!-- Progress Bar at 66% -->
 <div class="progress">
   <table style="width:110%">
       <tr>
         <td>Goal Recommendations</td>
-        <td>Goal Review</td>
+        <td style="color: #187189;">Goal Review</td>
         <td style="text-align: center";>Security & Submit</td>
       </tr>
   </table>
-
     <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
         <span class="sr-only"></span>
-
-
     </div>
 </div>
 
 
-<!-- Collapsable panels below -->
+<!-- message over panel -->
 <div class="head">
       <h1 style="text-aligN: center;"> Review your first transparency goal to begin </h1>
       <h4 style="text-aligN: center;"> Your first goal is set up – you can make changes or add more goals after signing up.</h4>
     </br>
-
 </div>
-      <div class="container">
-
+<!-- Collapsable panels below -->
+<div class="container" >
   <div class="panel-group" id="accordion">
-
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-            <i class="fa fa-life-ring" aria-hidden="true" style="font-size:30px;color:blue;"></i>
-          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-            Compliance
+          <i class="fa fa-list-alt" style="font-size: 1.5em"aria-hidden="true"></i>
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            <span style="text-align: left;"> Compliance
           </a>
+        </br></span>
+        <div style="text-align: right" class="pull-right">
+          <table style="width:100%">
+              <tr>
+                <td style="padding:0 15px 0 15px;">Manufacturer</td>
+                <td></td>
+
+                <td style="padding:0 15px 0 15px;">Electronics</td>
+                <td></td>
+
+                <td style="padding:0 50px 0 15px;">Asia</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th style="padding:0 15px 0 15px;">Type</th>
+
+                <th> </th>
+                <th style="padding:0 15px 0 15px;">Industry</th>
+
+                <th> </th>
+                <th style="padding:0 15px 0 15px;">Location</th>
+                <th> </th>
+              </tr>
+
+            </table></div>
         </h4>
       </div>
       <div id="collapseTwo" class="panel-collapse collapse in">
@@ -127,15 +139,16 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-5" style="text-indent: 33px;">
-                Recommended Allocation <a href="#" data-toggle="tooltip" title="Some helpful message here"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+                Recommended Allocation<a href="#" data-toggle="tooltip" title="Some helpful message here"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></br>
               </br>
               <div class="mapDiv">
-             <img id="map" src="map.png" height="180" width="280">
+             <img id="map" src="map.png" height="180" width="260">
              </div>
+             </br>
               </div>
               <div class="col-sm-5">
                 <table style="width:100%" rules= "rows">
-                  <thead> Source Intelligence Features </thead>
+                  <thead><b> Source Intelligence Features</b> </thead>
                     <tr>
                       <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
                         Diverse Portfolio of ETF's</a></td>
@@ -177,8 +190,11 @@
 
             </div>
           </div>
-          <button data-toggle="collapse" data-target="#demo1">Read More</button>
-          <button data-toggle="collapse" data-target="#demo2">Read More</button>
+          </br>
+          <div class="button pull-left" >
+            <button class="btn btn-primary" type="submit" style="width: 190px;">Read More</button>
+            <button class="btn btn-primary" type="submit" style="width: 190px;">Read More</button>
+          </div>
         </br>
         </br>
             <div id="demo2" class="collapse">
@@ -187,15 +203,16 @@
         </div>
       </div>
     </div>
-
-    </div>
-  </div>
+   </div>
 </div>
-
+</div>
+</br>
+<!-- These are the buttons at the buttom of the page-->
 <div class="button">
   <button class="btn btn-primary" type="submit" onclick="location.href='index.html'" style="width: 190px;">Back</button>
   <button class="btn btn-primary" type="submit" onclick="location.href='register.html'" style="width: 190px;">Continue to Sign Up</button>
 </div>
+<!-- This is the sticky footer -->
 <div class="footer navbar-fixed-bottom">
       <table class="container" style="width: 60%; text-align: left;">
         <p> <th><a href="http://www.sourceintelligence.com/privacy-policy/"> Privacy</a></th>
@@ -205,8 +222,6 @@
         </p>
       </table>
     </div>
-
-
   </body>
 
 </html>
