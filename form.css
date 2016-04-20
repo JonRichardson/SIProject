@@ -111,10 +111,6 @@ label {
   border-bottom: 1px solid #d0d0d0;
 }
 
-/*#firstName:focus, #lastName:focus, #email:focus, #password:focus {
-  border-bottom:2px solid #187189;
-}*/
-
 .bar {
   position:relative;
   display:block;
@@ -141,6 +137,10 @@ label {
 /* active state */
 .form-control.barSlide:focus ~ .bar:before, .form-control.barSlide:focus ~ .bar:after {
   width:50%;
+}
+
+.form-control:focus {
+  border-color:white;
 }
 
 .btn-default {
