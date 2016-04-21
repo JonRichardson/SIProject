@@ -18,18 +18,12 @@
   font-size: 18px;
   box-shadow: none;
   padding-left: 5%;
+  padding-right: 5%;
 }
 
 .progress-bar {
   margin-top: 9px;
 }
-
-.progressTable {
-color: #187189;
-}
-
-
-
 /* Font weights for h1 and h4 tags */
 h1 {
   font-weight: 100;
@@ -52,6 +46,16 @@ h4 {
 .iconDiv {
   display: inline-grid;
 }
+.inputPageVariables {
+  padding: 0 50px 5px 15px;
+  font-weight: 600;
+}
+
+.tableLabels {
+  padding: 0 15px 0 15px;
+  font-style: normal;
+  font-weight: 100;
+}
 
 /* This is for the round map picture for results pages */
 .mapDiv {
@@ -62,6 +66,7 @@ h4 {
  height: 300px;
  margin-left: 5%;
  margin-right: 5%;
+ margin-bottom: 30px;
  max-width: 300px;
  padding: 36.8098px 1%;
 }
@@ -75,45 +80,36 @@ h4 {
   color: green;
   height: 45px;
 }
-/* CSS for Collapsable panels below */
-#inputsHeader {
-text-align: right;
+
+td a {
+  color: grey;
 }
 
-.inputs {
-padding:0 15px 0 15px;
-}
-
-.inputsAsia {
-padding:0 50px 0 15px;
-}
-
-/* These are for the list on results page two */
 td a:hover {
 text-transform: full-width;
-color: blue;
+color: #187189;
 text-decoration: none;
 }
 
-.checkMark {
-text-align: center;
+.leftColHeader {
+  margin-left: 80px;
+}
+.tableHeader {
+  margin-left: 135px;
 }
 
-.fa-check {
-  color: green;
-}
-
-.slideTest {
-text-align: left;
-}
 .slideTest:hover {
-  transform: translate(15px, 0);
+  transform: translate(10px, 0);
   transition: 0.5s transform;
 }
 
-.sentence {
-  text-align: center;
-  font-size: 18px;
+.slideTest {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.rightTableRows {
+  border-bottom: 1px solid #ddd;
 }
 
 /* @@@@@@@@@@@@ Everything below this point is for the navbar @@@@@@@@@@@@  */
@@ -245,4 +241,12 @@ display: block;
 
 .navbar-fixed-bottom ul li a {
   text-decoration: none
+}
+
+.fa-life-ring {
+  color: #187189;
+}
+
+.detailsBtn {
+  text-indent: -22px;
 }
