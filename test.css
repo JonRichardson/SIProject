@@ -55,6 +55,7 @@ h4 {
   padding: 0 15px 0 15px;
   font-style: normal;
   font-weight: 100;
+
 }
 
 /* This is for the round map picture for results pages */
@@ -64,6 +65,19 @@ h4 {
  display: block;
  float: left;
  height: 300px;
+ margin-left: 5%;
+ margin-right: 5%;
+ margin-bottom: 30px;
+ max-width: 300px;
+ padding: 36.8098px 1%;
+}
+
+.mapDiv2 {
+ border-radius: 150px;
+ display: block;
+ float: left;
+ height: 300px;
+ margin-top: -30px;
  margin-left: 5%;
  margin-right: 5%;
  margin-bottom: 30px;
