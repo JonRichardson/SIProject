@@ -8,10 +8,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- This is the script for javScript to run -->
     <script type="text/javascript" src="project.js"></script>
-    <!-- This is the stylesheet for the registration form -->
-    <link rel="stylesheet" type="text/css" href ="form.css"/>
     <!-- This is the stylesheet for Source Intelligence -->
     <link rel="stylesheet" type="text/css" href ="app.css"/>
+    <!-- This is the stylesheet for the registration form -->
+    <link rel="stylesheet" type="text/css" href ="form.css"/>
     <!-- This is the stylesheet for the navbars, progress bars and more -->
     <link rel="stylesheet" type="text/css" href="test.css">
     <meta charset="utf-8">
@@ -25,7 +25,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
           </button>
-          <a  href="http://www.sourceintelligence.com/"><img src="si.png" alt="Source"  style="width:188px;height:74px;"></a>
+          <a  href="http://www.sourceintelligence.com/"><img class="siLogo" src="si.png" alt="Source"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -66,10 +66,10 @@
       </div>
     </nav>
     </br>
-
+    <br>
 <!-- Progress Bar -->
     <div class="progress">
-      <table style="width:110%; color: #187189">
+      <table class="progressTable" style="color: #187189" width="110%">
           <tr>
             <td>Goal Recommendations</td>
             <td>Goal Review</td>
@@ -80,34 +80,33 @@
           <span class="sr-only"></span>
         </div>
     </div>
-<!-- This is the code for the slider pic on the registration form -->
+<!-- This is the code for the info bubble on the registration form -->
     <div class="container">
       <div class="row">
         <div class="col-md-4">
           <div class="infoBubble">
-            <div class="both">
-              <div class="info1">
-                <br>
-                <span class="glyphicon glyphicon-life-preserver"></span>
-                <p>SIGN UP TODAY!</p>
-                <br>
-                <p>You're moments away from getting</p>
-                <p>started on your safety net</p>
-              </div>
-              <div class="info2">
-                <br>
-                <h5 id="questions">QUESTIONS?</h5>
-                <br>
-                <p>We're here to help</p>
-                <p>Contact us:</p>
-                <p>877.916.6337</p>
-                <p>support@SourceIntelligence.com</p>
-              </div>
+            <div class="info1">
+              <br>
+              <span class="glyphicon glyphicon-life-preserver"></span>
+              <p>SIGN UP TODAY</p>
+              <br>
+              <p>You're moments away from getting</p>
+              <p>started on your safety net</p>
+            </div>
+            <div class="info2">
+              <br>
+              <h5 id="questions">QUESTIONS?</h5>
+              <br>
+              <p>We're here to help</p>
+              <p>Contact us:</p>
+              <p>877.916.6337</p>
+              <p>support@SourceIntelligence.com</p>
             </div>
           </div>
         </div>
         <div class="col-md-1">
         </div>
+<!-- This is the code for the registration form -->
         <div class="col-md-7" class="formDiv">
           <form role="form" data-toggle="validator">
             <div class="form-group">
@@ -140,13 +139,14 @@
 
     <!-- This is the sticky footer -->
     <div class="footer navbar-fixed-bottom">
-          <table class="container" style="width: 60%; text-align: left;">
-            <p> <th><a href="http://www.sourceintelligence.com/privacy-policy/"> Privacy</a></th>
-                <th><a href="http://www.sourceintelligence.com/terms-of-use/"> Terms of Use</a></th>
-                <th><a href="http://www.sourceintelligence.com/about/"> About Us</a></th>
-                <th><a href="http://www.sourceintelligence.com/contact-us/"> Contact Us</a></th>
-            </p>
-          </table>
+          <div class="container">
+            <ul>
+              <li><a href="http://www.sourceintelligence.com/privacy-policy/"> Privacy</a></li>
+              <li><a href="http://www.sourceintelligence.com/terms-of-use/"> Terms of Use</a></li>
+              <li><a href="http://www.sourceintelligence.com/about/"> About Us</a></th>
+              <li><a href="http://www.sourceintelligence.com/contact-us/"> Contact Us</a></li>
+            </ul>
+          </div>
         </div>
   </body>
 </html>

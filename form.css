@@ -111,14 +111,9 @@ label {
   border-bottom: 1px solid #d0d0d0;
 }
 
-/*#firstName:focus, #lastName:focus, #email:focus, #password:focus {
-  border-bottom:2px solid #187189;
-}*/
-
 .bar {
   position:relative;
   display:block;
-  width:652px;
 }
 
 .bar:before, .bar:after {
@@ -141,6 +136,10 @@ label {
 /* active state */
 .form-control.barSlide:focus ~ .bar:before, .form-control.barSlide:focus ~ .bar:after {
   width:50%;
+}
+
+.form-control:focus {
+  border-color:white;
 }
 
 .btn-default {
@@ -183,4 +182,20 @@ label {
   font-weight: 100;
   font-size: 15px;
   margin-top: -5px;
+}
+
+.navbar-fixed-bottom ul{
+  width: 60%;
+  list-style: none;
+}
+
+.navbar-fixed-bottom ul li {
+  display: inline-block;
+  padding-right: 22px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.navbar-fixed-bottom ul a {
+
 }
