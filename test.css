@@ -46,6 +46,17 @@ h4 {
 .iconDiv {
   display: inline-grid;
 }
+.inputPageVariables {
+  padding: 0 50px 5px 15px;
+  font-weight: 600;
+}
+
+.tableLabels {
+  padding: 0 15px 0 15px;
+  font-style: normal;
+  font-weight: 100;
+
+}
 
 /* This is for the round map picture for results pages */
 .mapDiv {
@@ -79,6 +90,13 @@ td a:hover {
 text-transform: full-width;
 color: #187189;
 text-decoration: none;
+}
+
+.leftColHeader {
+  margin-left: 80px;
+}
+.tableHeader {
+  margin-left: 135px;
 }
 
 .slideTest:hover {
