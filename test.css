@@ -23,6 +23,13 @@
 .progress-bar {
   margin-top: 9px;
 }
+
+.progressTable {
+color: #187189;
+}
+
+
+
 /* Font weights for h1 and h4 tags */
 h1 {
   font-weight: 100;
@@ -68,17 +75,45 @@ h4 {
   color: green;
   height: 45px;
 }
+/* CSS for Collapsable panels below */
+#inputsHeader {
+text-align: right;
+}
 
+.inputs {
+padding:0 15px 0 15px;
+}
 
+.inputsAsia {
+padding:0 50px 0 15px;
+}
+
+/* These are for the list on results page two */
 td a:hover {
 text-transform: full-width;
 color: blue;
 text-decoration: none;
 }
 
+.checkMark {
+text-align: center;
+}
+
+.fa-check {
+  color: green;
+}
+
+.slideTest {
+text-align: left;
+}
 .slideTest:hover {
   transform: translate(15px, 0);
   transition: 0.5s transform;
+}
+
+.sentence {
+  text-align: center;
+  font-size: 18px;
 }
 
 /* @@@@@@@@@@@@ Everything below this point is for the navbar @@@@@@@@@@@@  */
