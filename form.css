@@ -114,7 +114,6 @@ label {
 .bar {
   position:relative;
   display:block;
-  width:652px;
 }
 
 .bar:before, .bar:after {
@@ -183,4 +182,20 @@ label {
   font-weight: 100;
   font-size: 15px;
   margin-top: -5px;
+}
+
+.navbar-fixed-bottom ul{
+  width: 60%;
+  list-style: none;
+}
+
+.navbar-fixed-bottom ul li {
+  display: inline-block;
+  padding-right: 22px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.navbar-fixed-bottom ul a {
+
 }
