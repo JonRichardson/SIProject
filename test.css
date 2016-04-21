@@ -1,11 +1,28 @@
-/* This is for the custom progress bar */
-.progress {
-  background: #ffffff; border: 5px solid #ffffff; border-radius: 1px; height: 38px; font-size: 18px;
-}
-.progress-bar-custom {
-  background: #ffffff);
+.siLogo {
+  width: 104px;
+  height: 41px;
+  margin-top: 17px;
+  margin-left: 100px;
 }
 
+.navbar-nav>li>a {
+    padding-top: 26px;
+}
+
+/* This is for the custom progress bar */
+.progress {
+  background: #ffffff;
+  border: 0px solid #ffffff;
+  border-radius: 1px;
+  height: 38px;
+  font-size: 18px;
+  box-shadow: none;
+  padding-left: 5%;
+}
+
+.progress-bar {
+  margin-top: 9px;
+}
 /* Font weights for h1 and h4 tags */
 h1 {
   font-weight: 100;
@@ -177,4 +194,20 @@ display: block;
   min-height: 10;
   max-height: 10;
   overflow-y: scroll;
+}
+
+.navbar-fixed-bottom ul{
+  width: 60%;
+  list-style: none;
+}
+
+.navbar-fixed-bottom ul li {
+  display: inline-block;
+  padding-right: 22px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.navbar-fixed-bottom ul li a {
+  text-decoration: none
 }
