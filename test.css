@@ -71,16 +71,28 @@ h4 {
   height: 45px;
 }
 
+td a {
+  color: grey;
+}
 
 td a:hover {
 text-transform: full-width;
-color: blue;
+color: #187189;
 text-decoration: none;
 }
 
 .slideTest:hover {
-  transform: translate(15px, 0);
+  transform: translate(10px, 0);
   transition: 0.5s transform;
+}
+
+.slideTest {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.rightTableRows {
+  border-bottom: 1px solid #ddd;
 }
 
 /* @@@@@@@@@@@@ Everything below this point is for the navbar @@@@@@@@@@@@  */
@@ -218,6 +230,6 @@ display: block;
   color: #187189;
 }
 
-#leftColumn {
-  border-right: 1px solid grey;
+.detailsBtn {
+  text-indent: -22px;
 }
