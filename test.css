@@ -39,7 +39,7 @@ h4 {
 }
 
 /* "Your Plan" header  collapsable panel */
-.panel-heading {
+.panel-heading.customPanel {
   height: 80px;
 }
 
@@ -49,13 +49,16 @@ h4 {
 .inputPageVariables {
   padding: 0 50px 5px 15px;
   font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px grey;
 }
 
 .tableLabels {
   padding: 0 15px 0 15px;
   font-style: normal;
   font-weight: 100;
-
+  color: white;
+  text-shadow: 1px 1px grey;
 }
 
 /* This is for the round map picture for results pages */
