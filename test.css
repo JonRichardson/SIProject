@@ -41,6 +41,7 @@ h4 {
 /* "Your Plan" header  collapsable panel */
 .panel-heading.customPanel {
   height: 80px;
+  background-color: #afd68d
 }
 
 .iconDiv {
