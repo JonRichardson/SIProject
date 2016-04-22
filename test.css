@@ -127,12 +127,13 @@ text-decoration: none;
 
 .slideTest:hover {
   transform: translate(10px, 0);
-  transition: 0.5s transform;
+  transition: 0.5s;
 }
 
 .slideTest {
   padding-top: 17px;
   padding-bottom: 17px;
+  transition: 0.5s;
 }
 
 .rightTableRows {
