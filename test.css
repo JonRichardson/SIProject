@@ -9,6 +9,9 @@
     padding-top: 26px;
 }
 
+.regulations {
+  font-size: 20px;
+}
 /* This is for the custom progress bar */
 .progress {
   background: #ffffff;
