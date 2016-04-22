@@ -108,6 +108,7 @@ label {
 .form-control.barSlide {
   border: none;
   box-shadow: none;
+  background-color: inherit;
   border-bottom: 1px solid #d0d0d0;
 }
 
