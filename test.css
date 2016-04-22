@@ -89,6 +89,13 @@ h4 {
  padding: 36.8098px 1%;
 }
 
+#myChart {
+  width: 280px;
+  height: 280px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
 /*.col-sm-6 {
   border-right: 1px solid black;
 /*}*/
