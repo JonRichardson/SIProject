@@ -42,8 +42,9 @@ h4 {
 }
 
 /* "Your Plan" header  collapsable panel */
-.panel-heading {
+.panel-heading.customPanel {
   height: 80px;
+  background-color: #afd68d
 }
 
 .iconDiv {
@@ -52,13 +53,16 @@ h4 {
 .inputPageVariables {
   padding: 0 50px 5px 15px;
   font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px grey;
 }
 
 .tableLabels {
   padding: 0 15px 0 15px;
   font-style: normal;
   font-weight: 100;
-
+  color: white;
+  text-shadow: 1px 1px grey;
 }
 
 /* This is for the round map picture for results pages */
@@ -86,6 +90,13 @@ h4 {
  margin-bottom: 30px;
  max-width: 300px;
  padding: 36.8098px 1%;
+}
+
+#myChart {
+  width: 280px;
+  height: 280px;
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
 
 /*.col-sm-6 {
