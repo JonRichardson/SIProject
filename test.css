@@ -15,13 +15,15 @@
 /* This is for the custom progress bar */
 .progress {
   background: #ffffff;
-  border: 0px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 1px;
   height: 38px;
-  font-size: 18px;
+  font-size: 15px;
   box-shadow: none;
   padding-left: 5%;
   padding-right: 5%;
+  color: #999;
+  font-weight: 100;
 }
 
 .progress-bar {
