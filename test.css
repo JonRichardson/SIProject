@@ -29,6 +29,11 @@
 .progress-bar {
   margin-top: 9px;
 }
+
+.index2Progress {
+  color: #187189;
+}
+
 /* Font weights for h1 and h4 tags */
 h1 {
   font-weight: 100;
