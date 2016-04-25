@@ -100,16 +100,23 @@
 .inputPageVariables {
   padding: 0 50px 5px 15px;
   font-weight: 600;
+  color: #F7F7F7;
 }
 
 #collapseTwo {
   border: 1px solid #ddd;
 }
 
+.fa-list-alt.panelIcon {
+  color: black;
+  font-size: 1.5em;
+}
+
 .tableLabels {
   padding: 0 15px 0 15px;
   font-style: normal;
   font-weight: 100;
+  color: black;
 }
 
 .moreItems a {
@@ -348,10 +355,10 @@ display: block;
 
 .accordion-toggle.yourPlan span {
   color: black;
-  font-size: 18px;
+  font-size: 1.4em;
   font-weight: 100;
 }
 
-.accordion-toggle.yourPlan span:hover {
-  font-weight: 500;
+.panel-heading.customPanel:hover {
+  opacity: 0.8;
 }
