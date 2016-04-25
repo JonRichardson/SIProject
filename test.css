@@ -106,8 +106,9 @@ h4 {
 #myChart {
   width: 280px;
   height: 280px;
-  margin-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-left: 25px;
 }
 /*.col-sm-6 {
   border-right: 1px solid black;
@@ -130,10 +131,14 @@ text-decoration: none;
 }
 
 .leftColHeader {
-  margin-left: 80px;
+  margin-left: 60px;
+  font-weight: 500;
+  font-size: 15px;
 }
 .tableHeader {
   margin-left: 135px;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .slideTest:hover {
@@ -286,5 +291,13 @@ display: block;
 }
 
 .detailsBtn {
-  text-indent: -22px;
+  text-indent: -37px;
+}
+
+.col-sm-5.infoLeft {
+  border-right: 1px solid #ddd;
+  width: 456px;
+}
+.col-sm-5.infoRight {
+  margin-left: 50px;
 }
