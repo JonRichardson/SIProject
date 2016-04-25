@@ -64,7 +64,9 @@ h4 {
   height: 80px;
 }
 
-
+.panel-heading.customPanel {
+  background-color: #afd68d;
+}
 .accordion-toggle.yourPlan {
   text-decoration: none;
 }
