@@ -345,3 +345,13 @@ display: block;
 .col-sm-5.infoRight {
   margin-left: 50px;
 }
+
+.accordion-toggle.yourPlan span {
+  color: black;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.accordion-toggle.yourPlan span:hover {
+  font-weight: 500;
+}
