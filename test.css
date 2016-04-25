@@ -106,9 +106,22 @@ h4 {
 #myChart {
   width: 280px;
   height: 280px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   padding-top: 20px;
   padding-left: 25px;
+}
+
+.donut-inner {
+   margin-top: -235px;
+   margin-bottom: 100px;
+   margin-left: 125px;
+}
+.donut-inner h5 {
+   margin-bottom: 5px;
+   margin-top: 0;
+}
+.donut-inner span {
+   font-size: 12px;
 }
 /*.col-sm-6 {
   border-right: 1px solid black;
