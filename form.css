@@ -110,6 +110,7 @@ label {
   box-shadow: none;
   background-color: inherit;
   border-bottom: 1px solid #d0d0d0;
+  font-size: 15px;
 }
 
 .bar {
@@ -162,6 +163,11 @@ label {
   font-weight: 100;
 }
 
+.fa-sign-in.signUpIcon {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
 .info1 {
   background-color: #187189;
   height: 240px;
@@ -170,7 +176,7 @@ label {
 }
 
 .info2 {
-  background-color: ##838689;
+  background-color: #005178;
   width:300px;
   height:300px;
   left: 0;
@@ -195,4 +201,16 @@ label {
   padding-right: 22px;
   padding-left: 10px;
   padding-top: 10px;
+}
+
+.registerProgress {
+  color: #187189;
+}
+
+#progress3 {
+  text-align: center;
+}
+
+#registerButton {
+  float: left;
 }
