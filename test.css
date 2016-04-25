@@ -12,6 +12,17 @@
 .regulations {
   font-size: 20px;
 }
+
+/* This is for the headings h1 and h4 */
+.headingh1 {
+  text-align: center;
+}
+
+.headingh4 {
+  text-align: center;
+  color: grey;
+}
+
 /* This is for the custom progress bar */
 .progress {
   background: #ffffff;
