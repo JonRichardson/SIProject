@@ -64,12 +64,35 @@ h4 {
   height: 80px;
 }
 
-.panel-heading.customPanel {
-  background-color: #afd68d;
+
+.accordion-toggle.yourPlan {
+  text-decoration: none;
+}
+
+.regulations {
+  font-size: 36px;
+  font-weight: 100;
+}
+.industry {
+  font-size: 16px;
+  color: grey;
+}
+
+.regList {
+  list-style:none;
+  color: grey;
+  text-indent: 30px;
+
 }
 
 .iconDiv {
   display: inline-grid;
+  font-size: 30px;
+}
+
+.priority {
+  font-size: 20px;
+  font-weight: lighter;
 }
 .inputPageVariables {
   padding: 0 50px 5px 15px;
@@ -84,7 +107,10 @@ h4 {
   padding: 0 15px 0 15px;
   font-style: normal;
   font-weight: 100;
+}
 
+.moreItems a {
+  text-decoration: none;
 }
 
 /* This is for the round map picture for results pages */
@@ -117,22 +143,9 @@ h4 {
 #myChart {
   width: 280px;
   height: 280px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   padding-top: 20px;
   padding-left: 25px;
-}
-
-.donut-inner {
-   margin-top: -235px;
-   margin-bottom: 100px;
-   margin-left: 125px;
-}
-.donut-inner h5 {
-   margin-bottom: 5px;
-   margin-top: 0;
-}
-.donut-inner span {
-   font-size: 12px;
 }
 /*.col-sm-6 {
   border-right: 1px solid black;
