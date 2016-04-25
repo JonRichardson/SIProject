@@ -15,18 +15,25 @@
 /* This is for the custom progress bar */
 .progress {
   background: #ffffff;
-  border: 0px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 1px;
   height: 38px;
-  font-size: 18px;
+  font-size: 15px;
   box-shadow: none;
   padding-left: 5%;
   padding-right: 5%;
+  color: #999;
+  font-weight: 100;
 }
 
 .progress-bar {
   margin-top: 9px;
 }
+
+.index2Progress {
+  color: #187189;
+}
+
 /* Font weights for h1 and h4 tags */
 h1 {
   font-weight: 100;
@@ -44,6 +51,10 @@ h4 {
 /* "Your Plan" header  collapsable panel */
 .panel-heading {
   height: 80px;
+}
+
+.panel-heading.customPanel {
+  background-color: #afd68d;
 }
 
 .iconDiv {
@@ -95,8 +106,9 @@ h4 {
 #myChart {
   width: 280px;
   height: 280px;
-  margin-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-left: 25px;
 }
 /*.col-sm-6 {
   border-right: 1px solid black;
@@ -119,10 +131,14 @@ text-decoration: none;
 }
 
 .leftColHeader {
-  margin-left: 80px;
+  margin-left: 60px;
+  font-weight: 500;
+  font-size: 15px;
 }
 .tableHeader {
   margin-left: 135px;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .slideTest:hover {
@@ -275,5 +291,13 @@ display: block;
 }
 
 .detailsBtn {
-  text-indent: -22px;
+  text-indent: -37px;
+}
+
+.col-sm-5.infoLeft {
+  border-right: 1px solid #ddd;
+  width: 456px;
+}
+.col-sm-5.infoRight {
+  margin-left: 50px;
 }
