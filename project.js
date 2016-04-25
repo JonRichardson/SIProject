@@ -22,8 +22,12 @@ $(document).ready(function(){
   });
 
   $(".info2").hover(function () {
-  $(".info1").slideToggle("slow");
+    $(".info1").slideToggle("slow");
   });
+
+  // $(".accordion-toggle.yourPlan").click(function () {
+  //   $(".greyBox").hide();
+  // });
 
   $(function () {
 
