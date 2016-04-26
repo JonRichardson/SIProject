@@ -407,3 +407,7 @@ td a:hover {
 .donut-inner span {
   font-size: 12px;
 }
+
+.panel-default.priorityPanels {
+  margin-bottom: 10px;
+}
