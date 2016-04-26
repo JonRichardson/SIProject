@@ -26,15 +26,18 @@ $(document).ready(function(){
   });
 
   $("#priorityOne").click(function(){
-      $("#priorityOneBox").toggle();
+      $("#priorityOneBox").toggleClass("greyBox");
+      $(".chevron1").toggleClass("down");
   });
 
   $("#priorityTwo").click(function(){
-      $("#priorityTwoBox").toggle();
+      $("#priorityTwoBox").toggleClass("greyBox");
+      $(".chevron2").toggleClass("down");
   });
 
   $("#priorityThree").click(function(){
-      $("#priorityThreeBox").toggle();
+      $("#priorityThreeBox").toggleClass("greyBox");
+      $(".chevron3").toggleClass("down");
   });
 
   $(function () {

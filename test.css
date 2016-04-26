@@ -374,5 +374,27 @@ display: block;
   background-color: #F9F9F9;
   height: 100%;
   margin-top: -10px;
-  padding-bottom: 36px;
+  padding-top: 10px;
+  padding-bottom: 27px;
+}
+
+.col-sm-4.panelChevron {
+  text-align: right;
+  font-size: 1.4em;
+  color: #999;
+  padding-top: 15px;
+  padding-right: 37px;
+}
+
+.rotate{
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.rotate.down{
+    -ms-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
 }
