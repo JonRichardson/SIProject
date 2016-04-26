@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- This is the stylesheet for Source Intelligence -->
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <!-- This is the our stylesheet -->
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <!-- This is the script for jquery use -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- jQuery library -->
+  	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Add cdn to chart.js library files. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <!-- This is the javaScript for Source Intelligence -->
+    <script type="text/javascript" src="project.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Source Intelligence Onboarding">
+    <meta name="author" content="Ramin Mesghali & John Richardson">
+
+
+    <title>TEST </title>
+
+    <!-- Bootstrap core CSS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- This is the navbar for Source Intelligence -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <a  href="http://www.sourceintelligence.com/"><img class="siLogo" src="si.png" alt="Source"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Enterprise Solutions
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Conflict Minerals</a></li>
+                <li><a href="#">Smeleter Verification</a></li>
+                <li><a href="#">Restricted Substances</a></li>
+                <li><a href="#">Anti-Corruption</a></li>
+                <li><a href="#">Anti-Bribery</a></li>
+                <li><a href="#">Human Trafficking</a></li>
+                <li><a href="#">Forced Labor</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">For Suppliers
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Resource Center</a></li>
+                <li><a href="#">Training & Certifiction</a></li>
+                <li><a href="#">Restricted Substances</a></li>
+                <li><a href="#">Anti-Corruption</a></li>
+                <li><a href="#">Anti-Bribery</a></li>
+                <li><a href="#">Human Trafficking</a></li>
+                <li><a href="#">Forced Labor</a></li>
+              </ul>
+            </li>
+            <li><a href="../navbar-fixed-top/">Customer Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </br>
+  </br>
+<!-- Progress Bar at 66% -->
+    <div class="progress">
+      <table style="width:110%">
+        <tr>
+          <td class="index2Progress">Goal Recommendations</td>
+          <td class="index2Progress">Goal Review</td>
+          <td id="progress3" style="text-align: center";>Security & Submit</td>
+        </tr>
+      </table>
+        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 57%;">
+          <span class="sr-only"></span>
+        </div>
+    </div>
+
+
+<!-- message over panel -->
+    <div class="head">
+      <h1 class="headingh1"> Review your first transparency goal to begin </h1>
+      <h4 class="headingh4"> Your first goal is set up – you can make changes or add more goals after signing up.</h4></br>
+    </div>
+<!-- Collapsable panels below -->
+    <div class="container" >
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <a class="accordion-toggle yourPlan" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            <div class="panel-heading customPanel">
+              <h4 class="panel-title">
+                <div class="row">
+                  <div class="col-sm-6">
+                  </br>
+                    <i class="fa fa-list-alt panelIcon" aria-hidden="true"></i>
+                    <span> Your Plan</span>
+                  </div>
+                  <div class="col-sm-6">
+                  </br>
+                    <div style="text-align: right" class="pull-right">
+                      <table style="width:100%">
+                        <tr>
+                          <td class="inputPageVariables">Manufacturer</td>
+                          <td></td>
+                          <td class="inputPageVariables">Electronics</td>
+                          <td></td>
+                          <td class="inputPageVariables">Asia</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th class="tableLabels">Type</th>
+                          <th> </th>
+                          <th class="tableLabels">Industry</th>
+                          <th> </th>
+                          <th class="tableLabels">Location</th>
+                          <th> </th>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </h4>
+              </div>
+            </div>
+          </a>
+          <div id="collapseTwo" class="panel-collapse collapse in">
+            <div class="panel-body">
+
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div id="div1" class="col-md-5"style="border: 1px solid black;">
+                <span class="leftColHeader">Recommended Allocation   <a href="#" data-toggle="tooltip" title="Some helpful message here"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></span></br>
+                </br>
+                <canvas id="myChart"></canvas>
+                <br>
+              </div>
+              <div id="div2" class="col-md-5"style="border: 1px solid black;">
+                <table id="table" style="width:100%" rules= "rows">
+                  <thead>
+                    <span class="tableHeader">Source Intelligence Features</span>
+                  </thead>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      Conflict Minerals</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      Smelter Verification</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      Restrictie Substances</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      Anti-Corruption</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      Anti-Bribery</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      Human Trafficking</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      Forced Labor</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                </table>
+              </div>
+              <div id="div3" class="col-md-5"style="border: 1px solid black;display: none">
+                <table id="table2" style="width:100%" rules= "rows">
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      S</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      W</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      A</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      G</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    G</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      Y</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                  <tr class="rightTableRows">
+                    <td class="slideTest" style="text-align: left"><a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      J</a></td>
+                    <td style="text-align: center"><i class="fa fa-check" aria-hidden="true" style="color: green;"></i></td>
+                    <td><hr></td>
+                  </tr>
+                </table>
+              </div>
+              </div>
+              <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-5" style="border: 1px solid black; text-align: center;">
+                <div class="detailsBtn">
+                  <button class="btn btn-primary" id="overview" type="submit" style="width: 190px;">Overview</button>
+                  <button class="btn btn-primary" id="details" data-toggle="collapse" data-target="#demo"  type="submit" style="width: 190px;">Details</button>
+                </div>
+              </div>
+              <div class="col-md-5" style="border: 1px solid black;">
+                col2
+              </div>
+              <div class="col-md-1"></div>
+          </div>
+          </div>
+
+        </div>
+
+       </div>
+     </div>
+    </div>
+    </br>
+<!-- These are the buttons at the buttom of the page-->
+<h4 class="headingh4">You can change target and allocation of this goal or add more goals after you sign up.</h4>
+
+    <div class="button">
+      <button class="btn btn-primary" type="submit" onclick="location.href='index.html'" style="width: 190px;">Back</button>
+      <button class="btn btn-primary" type="submit" onclick="location.href='register.html'" style="width: 190px;">Continue to Sign Up</button>
+    </div>
+    <!-- This is the sticky footer -->
+    <div class="footer navbar-fixed-bottom">
+      <div class="container">
+        <ul>
+          <li><a href="http://www.sourceintelligence.com/privacy-policy/"> Privacy</a></li>
+          <li><a href="http://www.sourceintelligence.com/terms-of-use/"> Terms of Use</a></li>
+          <li><a href="http://www.sourceintelligence.com/about/"> About Us</a></th>
+          <li><a href="http://www.sourceintelligence.com/contact-us/"> Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    
+
+
+  </body>
+</html>

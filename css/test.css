@@ -407,3 +407,7 @@ td a:hover {
 .panel-default.priorityPanels {
   margin-bottom: 10px;
 }
+
+#div1, #div2, #div3 {
+  height: 450px;
+}
