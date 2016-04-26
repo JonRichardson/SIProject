@@ -98,13 +98,17 @@
   font-weight: lighter;
 }
 .inputPageVariables {
-  padding: 0 50px 5px 15px;
+  padding: 0 50px 5px 0px;
   font-weight: 600;
   color: #F7F7F7;
 }
 
 #collapseTwo {
   border: 1px solid #ddd;
+}
+
+.panel-default.firstPriority.topMargin {
+  margin-top: 0px;
 }
 
 .fa-list-alt.panelIcon, .fa-chain-broken.panelIcon, .fa-shield.panelIcon, .fa-envira.panelIcon {
