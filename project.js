@@ -25,9 +25,17 @@ $(document).ready(function(){
     $(".info1").slideToggle("slow");
   });
 
-  // $(".accordion-toggle.yourPlan").click(function () {
-  //   $(".greyBox").hide();
-  // });
+  $("#priorityOne").click(function(){
+      $("#priorityOneBox").toggle();
+  });
+
+  $("#priorityTwo").click(function(){
+      $("#priorityTwoBox").toggle();
+  });
+
+  $("#priorityThree").click(function(){
+      $("#priorityThreeBox").toggle();
+  });
 
   $(function () {
 

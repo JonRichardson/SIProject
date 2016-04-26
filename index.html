@@ -5,7 +5,9 @@
     <link rel="stylesheet" type="text/css" href="app.css">
     <!-- This is the stylesheet for us -->
     <link rel="stylesheet" type="text/css" href="test.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="project.js"></script>
+
     <!-- This is the javaScript file for the onboarding functionality -->
     <!-- <script type="text/javascript" src="test.js"></script> -->
     <!-- This is the script for jquery -->
@@ -137,11 +139,11 @@
         </a>
       </div>
     <div class="panel panel-default firstPriority topMargin">
-      <a class="accordion-toggle yourPlan" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+      <a id="priorityOne" class="accordion-toggle yourPlan" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
         <div class="panel-heading expandPanel">
           <h4 class="panel-title">
             <div class="row">
-              <div class="col-sm-4 greyBox">
+              <div id="priorityOneBox" class="col-sm-4 greyBox">
               </br>
                 <i class="fa fa-chain-broken panelIcon" aria-hidden="true"></i>
                 <span>Priority One</span>
@@ -154,7 +156,7 @@
           </h4>
         </div>
       </a>
-      <div id="collapseOne" class="panel-collapse collapse in">
+      <div id="collapseOne" class="panel-collapse collapse">
         <div class="panel-body fixed-panel">
           <div class="mapDiv2">
             <img id="map" src="asia_globe.png" height="280" width="280">
@@ -179,11 +181,11 @@
   <!-- Div 1 -->
   <!-- Div 2 -->
     <div class="panel panel-default">
-      <a class="accordion-toggle yourPlan" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+      <a id="priorityTwo"class="accordion-toggle yourPlan" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
         <div class="panel-heading expandPanel">
           <h4 class="panel-title">
             <div class="row">
-              <div class="col-sm-4 greyBox">
+              <div id="priorityTwoBox" class="col-sm-4 greyBox">
               </br>
                 <i class="fa fa-shield panelIcon" aria-hidden="true"></i>
                 <span>Priority Two</span>
@@ -203,11 +205,11 @@
     <!-- Div 2 -->
     <!-- Div 3 -->
     <div class="panel panel-default">
-      <a class="accordion-toggle yourPlan" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+      <a id="priorityThree" class="accordion-toggle yourPlan" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
         <div class="panel-heading expandPanel">
           <h4 class="panel-title">
             <div class="row">
-              <div class="col-sm-4 greyBox">
+              <div id="priorityThreeBox" class="col-sm-4 greyBox">
               </br>
                 <i class="fa fa-envira panelIcon" aria-hidden="true"></i>
                 <span>Priority Three</span>
