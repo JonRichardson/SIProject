@@ -97,8 +97,9 @@
   font-size: 20px;
   font-weight: lighter;
 }
+
 .inputPageVariables {
-  padding: 0 50px 5px 0px;
+  padding: 0 50px 5px 15px;
   font-weight: 600;
   color: #F7F7F7;
 }
@@ -115,8 +116,6 @@
   color: black;
   font-size: 1.5em;
 }
-
-.fa-chain-broken.panelIcon
 
 .tableLabels {
   padding: 0 15px 0 15px;
@@ -372,7 +371,7 @@ display: block;
 }*/
 
 .col-sm-4.greyBox {
-  background-color: #EFEFEF;
+  background-color: #F9F9F9;
   height: 100%;
   margin-top: -10px;
   padding-bottom: 36px;
