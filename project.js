@@ -25,9 +25,20 @@ $(document).ready(function(){
     $(".info1").slideToggle("slow");
   });
 
-  // $(".accordion-toggle.yourPlan").click(function () {
-  //   $(".greyBox").hide();
-  // });
+  $("#priorityOne").click(function(){
+      $("#priorityOneBox").toggleClass("greyBox");
+      $(".chevron1").toggleClass("down");
+  });
+
+  $("#priorityTwo").click(function(){
+      $("#priorityTwoBox").toggleClass("greyBox");
+      $(".chevron2").toggleClass("down");
+  });
+
+  $("#priorityThree").click(function(){
+      $("#priorityThreeBox").toggleClass("greyBox");
+      $(".chevron3").toggleClass("down");
+  });
 
   $(function () {
 

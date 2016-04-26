@@ -102,42 +102,40 @@
     <div class="container" >
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
-          <a class="accordion-toggle yourPlan" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-            <div class="panel-heading customPanel">
-              <h4 class="panel-title">
-                <div class="row">
-                  <div class="col-sm-6">
-                  </br>
-                    <i class="fa fa-list-alt panelIcon" aria-hidden="true"></i>
-                    <span> Your Plan</span>
+          <div class="panel-heading customPanel">
+            <h4 class="panel-title">
+              <div class="row">
+                <div class="col-sm-6">
+                </br>
+                  <i class="fa fa-list-alt panelIcon" aria-hidden="true"></i>
+                  <span class="mainPanelLabel"> Your Plan</span>
+                </div>
+                <div class="col-sm-6">
+                </br>
+                  <div style="text-align: right" class="pull-right">
+                    <table style="width:100%">
+                      <tr>
+                        <td class="inputPageVariables">Manufacturer</td>
+                        <td></td>
+                        <td class="inputPageVariables">Electronics</td>
+                        <td></td>
+                        <td class="inputPageVariables">Asia</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th class="tableLabels">Type</th>
+                        <th> </th>
+                        <th class="tableLabels">Industry</th>
+                        <th> </th>
+                        <th class="tableLabels">Location</th>
+                        <th> </th>
+                      </tr>
+                    </table>
                   </div>
-                  <div class="col-sm-6">
-                  </br>
-                    <div style="text-align: right" class="pull-right">
-                      <table style="width:100%">
-                        <tr>
-                          <td class="inputPageVariables">Manufacturer</td>
-                          <td></td>
-                          <td class="inputPageVariables">Electronics</td>
-                          <td></td>
-                          <td class="inputPageVariables">Asia</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <th class="tableLabels">Type</th>
-                          <th> </th>
-                          <th class="tableLabels">Industry</th>
-                          <th> </th>
-                          <th class="tableLabels">Location</th>
-                          <th> </th>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </h4>
-              </div>
+                </div>
+              </h4>
             </div>
-          </a>
+          </div>
           <div id="collapseTwo" class="panel-collapse collapse in">
             <div class="panel-body">
               <div class="container">
@@ -148,6 +146,10 @@
                     <span class="leftColHeader">Recommended Allocation   <a href="#" data-toggle="tooltip" title="Some helpful message here"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></span></br>
                     </br>
                     <canvas id="myChart"></canvas>
+                    <div class="donut-inner">
+                      <h5>47 / 60 st</h5>
+                      <span>(30 / 25 st)</span>
+                    </div>
                     <br>
                     <div class="detailsBtn">
                       <button class="btn btn-primary" type="submit" style="width: 190px;">Overview</button>
