@@ -100,16 +100,25 @@
 .inputPageVariables {
   padding: 0 50px 5px 15px;
   font-weight: 600;
+  color: #F7F7F7;
 }
 
 #collapseTwo {
   border: 1px solid #ddd;
 }
 
+.fa-list-alt.panelIcon, .fa-chain-broken.panelIcon, .fa-shield.panelIcon, .fa-envira.panelIcon {
+  color: black;
+  font-size: 1.5em;
+}
+
+.fa-chain-broken.panelIcon
+
 .tableLabels {
   padding: 0 15px 0 15px;
   font-style: normal;
   font-weight: 100;
+  color: black;
 }
 
 .moreItems a {
@@ -330,10 +339,6 @@ display: block;
   text-decoration: none
 }
 
-.fa-life-ring {
-  color: #187189;
-}
-
 .detailsBtn {
   text-indent: -37px;
 }
@@ -346,12 +351,25 @@ display: block;
   margin-left: 50px;
 }
 
-.accordion-toggle.yourPlan span {
+.mainPanelLabel {
   color: black;
-  font-size: 18px;
+  font-size: 1.4em;
   font-weight: 100;
 }
 
-.accordion-toggle.yourPlan span:hover {
-  font-weight: 500;
+.accordion-toggle.yourPlan span {
+  color: black;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+/*.panel-heading.customPanel:hover {
+  opacity: 0.8;
+}*/
+
+.col-sm-4.greyBox {
+  background-color: #EFEFEF;
+  height: 100%;
+  margin-top: -10px;
+  padding-bottom: 36px;
 }
