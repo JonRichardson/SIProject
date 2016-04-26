@@ -6,7 +6,7 @@
 }
 
 .navbar-nav>li>a {
-    padding-top: 26px;
+  padding-top: 26px;
 }
 
 .regulations {
@@ -50,7 +50,6 @@
 .index2Progress {
   color: #187189;
 }
-
 
 /* This places the buttons for selction and reading more in the center */
 .button {
@@ -134,29 +133,29 @@
 
 /* This is for the round map picture for results pages */
 .mapDiv {
- background-color: #f9f9f9 ;
- border-radius: 150px;
- display: block;
- float: left;
- height: 300px;
- margin-left: 5%;
- margin-right: 5%;
- margin-bottom: 30px;
- max-width: 300px;
- padding: 36.8098px 1%;
+  background-color: #f9f9f9 ;
+  border-radius: 150px;
+  display: block;
+  float: left;
+  height: 300px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  max-width: 300px;
+  padding: 36.8098px 1%;
 }
 
 .mapDiv2 {
- border-radius: 150px;
- display: block;
- float: left;
- height: 300px;
- margin-top: -30px;
- margin-left: 5%;
- margin-right: 5%;
- margin-bottom: 30px;
- max-width: 300px;
- padding: 36.8098px 1%;
+  border-radius: 150px;
+  display: block;
+  float: left;
+  height: 300px;
+  margin-top: -30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  max-width: 300px;
+  padding: 36.8098px 1%;
 }
 
 #myChart {
@@ -166,9 +165,6 @@
   padding-top: 20px;
   padding-left: 25px;
 }
-/*.col-sm-6 {
-  border-right: 1px solid black;
-/*}*/
 
 .footer {
   background-color: #2C2C2C;
@@ -181,9 +177,9 @@ td a {
 }
 
 td a:hover {
-text-transform: full-width;
-color: #187189;
-text-decoration: none;
+  text-transform: full-width;
+  color: #187189;
+  text-decoration: none;
 }
 
 .leftColHeader {
@@ -216,7 +212,7 @@ text-decoration: none;
 
 /* This lets you hover over the dropdowns for functionality */
 .dropdown:hover .dropdown-menu {
-display: block;
+  display: block;
 }
 
 /* Panel height */
@@ -225,31 +221,31 @@ display: block;
 }
 
 .wrapper-dropdown-5 {
-    /* Size & position */
-    position: absolute;
-    width: 200px;
-    margin: 0 auto;
-    padding: 12px 15px;
-    /* Styles */
-    background: transparent;
-    border-radius: 5px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease-out;
+  /* Size & position */
+  position: absolute;
+  width: 200px;
+  margin: 0 auto;
+  padding: 12px 15px;
+  /* Styles */
+  background: transparent;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-out;
 }
 
 .wrapper-dropdown-5:after { /* Little arrow */
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    margin-top: -3px;
-    border-width: 6px 6px 0 6px;
-    border-style: solid;
-    border-color: transparent;
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: transparent;
 }
 .wrapper-dropdown-5 .dropdown {
 /* Size & position */
@@ -273,51 +269,51 @@ display: block;
 }
 
 .wrapper-dropdown-5 .dropdown li {
-    padding: 0 10px ;
+  padding: 0 10px ;
 }
 
 .wrapper-dropdown-5 .dropdown li a {
-    display: block;
-    text-decoration: none;
-    color: transparent;
-    padding: 10px 0;
-    transition: all 0.3s ease-out;
-    border-bottom: 1px solid #e6e8ea;
+  display: block;
+  text-decoration: none;
+  color: transparent;
+  padding: 10px 0;
+  transition: all 0.3s ease-out;
+  border-bottom: 1px solid #e6e8ea;
 }
 
 .wrapper-dropdown-5 .dropdown li:last-of-type a {
-    border: none;
+  border: none;
 }
 
 .wrapper-dropdown-5 .dropdown li i {
-    margin-right: 5px;
-    color: transparent;
-    vertical-align: middle;
+  margin-right: 5px;
+  color: transparent;
+  vertical-align: middle;
 }
 
 /* Hover state */
 
 .wrapper-dropdown-5 .dropdown li:hover a {
-    color: transparent;
+  color: transparent;
 }
 
 /* Active state */
 
 .wrapper-dropdown-5.active {
-    border-radius: 5px 5px 0 0;
-    /*background: #4cbeff;*/
-    box-shadow: none;
-    border-bottom: none;
-    color: white;
+  border-radius: 5px 5px 0 0;
+  /*background: #4cbeff;*/
+  box-shadow: none;
+  border-bottom: none;
+  color: white;
 }
 
 .wrapper-dropdown-5.active:after {
-    border-color: #82d1ff transparent;
+  border-color: #82d1ff transparent;
 }
 
 .wrapper-dropdown-5.active .dropdown {
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-    max-height: 400px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  max-height: 400px;
 }
 
 .fixed-panel {
@@ -387,14 +383,27 @@ display: block;
 }
 
 .rotate{
-    -moz-transition: all 0.2s linear;
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .rotate.down{
-    -ms-transform:rotate(180deg);
-    -moz-transform:rotate(180deg);
-    -webkit-transform:rotate(180deg);
-    transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  transform:rotate(180deg);
+}
+
+.donut-inner {
+  margin-top: -190px;
+  margin-bottom: 150px;
+  padding-left: 124px;
+}
+.donut-inner h5 {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.donut-inner span {
+  font-size: 12px;
 }
