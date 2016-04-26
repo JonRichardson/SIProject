@@ -26,24 +26,22 @@ $(document).ready(function(){
   });
 
   $("#priorityOne").click(function(){
-      $("#priorityOneBox").toggleClass("greyBox");
-      $(".chevron1").toggleClass("down");
+    $("#priorityOneBox").toggleClass("greyBox");
+    $(".chevron1").toggleClass("down");
   });
 
   $("#priorityTwo").click(function(){
-      $("#priorityTwoBox").toggleClass("greyBox");
-      $(".chevron2").toggleClass("down");
+    $("#priorityTwoBox").toggleClass("greyBox");
+    $(".chevron2").toggleClass("down");
   });
 
   $("#priorityThree").click(function(){
-      $("#priorityThreeBox").toggleClass("greyBox");
-      $(".chevron3").toggleClass("down");
+    $("#priorityThreeBox").toggleClass("greyBox");
+    $(".chevron3").toggleClass("down");
   });
 
   $(function () {
-
     var ctx = $("#myChart").get(0).getContext("2d");
-
   	var data = [
   		{
   			value: 170,
@@ -70,9 +68,6 @@ $(document).ready(function(){
   			label: "Gold"
   		}
   	];
-
 	  var chart = new Chart(ctx).Doughnut(data);
-
   });
-
 });
