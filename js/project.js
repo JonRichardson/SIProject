@@ -40,6 +40,15 @@ $(document).ready(function(){
     $(".chevron3").toggleClass("down");
   });
 
+// The following two scripts are for modifying data in Results Page 2
+  $("#overview").click(function () {
+    $("#div2").fadeToggle("slow")
+
+  });
+  $("#details").click(function () {
+    $("#table2").fadeToggle("slow")
+  });
+
   $(function () {
     var ctx = $("#myChart").get(0).getContext("2d");
   	var data = [
