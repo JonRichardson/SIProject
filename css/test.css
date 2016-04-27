@@ -362,12 +362,17 @@ td a:hover {
   font-weight: 100;
 }
 
-.col-sm-4.greyBox {
+.greyBox1, .greyBox2, .greyBox3 {
   background-color: #F9F9F9;
   height: 100%;
   margin-top: -10px;
   padding-top: 10px;
   padding-bottom: 27px;
+  transition: 0.8s;
+}
+
+.greyBox1.fadeOut, .greyBox2.fadeOut, .greyBox3.fadeOut {
+  background-color: white;
 }
 
 .col-sm-4.panelChevron {
@@ -379,9 +384,9 @@ td a:hover {
 }
 
 .rotate{
-  -moz-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -moz-transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .rotate.down{
