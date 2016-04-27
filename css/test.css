@@ -352,14 +352,27 @@ td a:hover {
 
 .mainPanelLabel {
   color: black;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 100;
+  margin-top: 10px;
 }
 
 .accordion-toggle.yourPlan span {
-  color: black;
-  font-size: 1.4em;
+  color: #686868;
+  font-size: 0.7em;
   font-weight: 100;
+  text-transform: uppercase;
+}
+
+.iconLabel {
+  margin-left: 30px;
+  margin-top: -33px;
+}
+
+.priorityName {
+  color: black;
+  font-weight: 100;
+  font-size: 1.2em;
 }
 
 .greyBox1, .greyBox2, .greyBox3 {
@@ -367,7 +380,7 @@ td a:hover {
   height: 100%;
   margin-top: -10px;
   padding-top: 10px;
-  padding-bottom: 27px;
+  padding-bottom: 6px;
   transition: 0.8s;
 }
 
