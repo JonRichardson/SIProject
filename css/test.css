@@ -350,38 +350,75 @@ td a:hover {
   margin-left: 50px;
 }
 
+.mainPanelIconLabel {
+  padding-left: 18px;
+}
+
 .mainPanelLabel {
   color: black;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 100;
+  margin-top: 10px;
 }
 
 .accordion-toggle.yourPlan span {
-  color: black;
-  font-size: 1.4em;
+  color: #686868;
+  font-size: 0.7em;
   font-weight: 100;
+  text-transform: uppercase;
 }
 
-.col-sm-4.greyBox {
+.iconLabel {
+  margin-left: 30px;
+  margin-top: -33px;
+}
+
+.priorityName {
+  color: black;
+  font-weight: 100;
+  font-size: 1.2em;
+}
+
+.greyBox1, .greyBox2, .greyBox3 {
   background-color: #F9F9F9;
   height: 100%;
   margin-top: -10px;
   padding-top: 10px;
-  padding-bottom: 27px;
+  padding-bottom: 13px;
+  padding-left: 35px;
+  transition: 0.8s;
 }
 
-.col-sm-4.panelChevron {
+.greyBox1.fadeOut, .greyBox2.fadeOut, .greyBox3.fadeOut {
+  background-color: white;
+}
+
+.panelText1, .panelText2, .panelText3 {
+  color: #686868;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: center;
+  padding-top: 10px;
+  transition: 0.8s;
+}
+
+.panelText1.fadeOut, .panelText2.fadeOut, .panelText3.fadeOut {
+  color: white;
+}
+
+.col-sm-2.panelChevron {
   text-align: right;
   font-size: 1.4em;
   color: #999;
   padding-top: 15px;
   padding-right: 37px;
+  -webkit-text-stroke: 2px white;
 }
 
 .rotate{
-  -moz-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -moz-transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .rotate.down{

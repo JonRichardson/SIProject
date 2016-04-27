@@ -26,17 +26,20 @@ $(document).ready(function(){
   });
 
   $("#priorityOne").click(function(){
-    $("#priorityOneBox").toggleClass("greyBox");
+    $(".greyBox1").toggleClass("fadeOut");
+    $(".panelText1").toggleClass("fadeOut");
     $(".chevron1").toggleClass("down");
   });
 
   $("#priorityTwo").click(function(){
-    $("#priorityTwoBox").toggleClass("greyBox");
+    $(".greyBox2").toggleClass("fadeOut");
+    $(".panelText2").toggleClass("fadeOut");
     $(".chevron2").toggleClass("down");
   });
 
   $("#priorityThree").click(function(){
-    $("#priorityThreeBox").toggleClass("greyBox");
+    $(".greyBox3").toggleClass("fadeOut");
+    $(".panelText3").toggleClass("fadeOut");
     $(".chevron3").toggleClass("down");
   });
 
