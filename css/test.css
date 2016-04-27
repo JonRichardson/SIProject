@@ -350,6 +350,10 @@ td a:hover {
   margin-left: 50px;
 }
 
+.mainPanelIconLabel {
+  padding-left: 18px;
+}
+
 .mainPanelLabel {
   color: black;
   font-size: 1.2em;
@@ -380,7 +384,8 @@ td a:hover {
   height: 100%;
   margin-top: -10px;
   padding-top: 10px;
-  padding-bottom: 6px;
+  padding-bottom: 13px;
+  padding-left: 35px;
   transition: 0.8s;
 }
 
