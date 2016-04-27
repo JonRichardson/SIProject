@@ -27,16 +27,19 @@ $(document).ready(function(){
 
   $("#priorityOne").click(function(){
     $(".greyBox1").toggleClass("fadeOut");
+    $(".panelText1").toggleClass("fadeOut");
     $(".chevron1").toggleClass("down");
   });
 
   $("#priorityTwo").click(function(){
     $(".greyBox2").toggleClass("fadeOut");
+    $(".panelText2").toggleClass("fadeOut");
     $(".chevron2").toggleClass("down");
   });
 
   $("#priorityThree").click(function(){
     $(".greyBox3").toggleClass("fadeOut");
+    $(".panelText3").toggleClass("fadeOut");
     $(".chevron3").toggleClass("down");
   });
 

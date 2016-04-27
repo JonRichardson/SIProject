@@ -393,12 +393,26 @@ td a:hover {
   background-color: white;
 }
 
-.col-sm-4.panelChevron {
+.panelText1, .panelText2, .panelText3 {
+  color: #686868;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: center;
+  padding-top: 10px;
+  transition: 0.8s;
+}
+
+.panelText1.fadeOut, .panelText2.fadeOut, .panelText3.fadeOut {
+  color: white;
+}
+
+.col-sm-2.panelChevron {
   text-align: right;
   font-size: 1.4em;
   color: #999;
   padding-top: 15px;
   padding-right: 37px;
+  -webkit-text-stroke: 2px white;
 }
 
 .rotate{
