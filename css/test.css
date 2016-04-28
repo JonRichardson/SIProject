@@ -386,7 +386,7 @@ td a:hover {
   padding-top: 10px;
   padding-bottom: 13px;
   padding-left: 35px;
-  transition: 0.8s;
+  transition: 0.3s;
 }
 
 .greyBox1.fadeOut, .greyBox2.fadeOut, .greyBox3.fadeOut {
@@ -399,7 +399,7 @@ td a:hover {
   font-size: 1em;
   text-align: center;
   padding-top: 10px;
-  transition: 0.8s;
+  transition: 0.3s;
 }
 
 .panelText1.fadeOut, .panelText2.fadeOut, .panelText3.fadeOut {
@@ -416,9 +416,9 @@ td a:hover {
 }
 
 .rotate{
-  -moz-transition: all 0.1s linear;
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .rotate.down{
@@ -447,4 +447,41 @@ td a:hover {
 
 #div1, #div2, #div3 {
   height: 450px;
+}
+
+.variableTable {
+  text-align: right;
+  margin-top: -6px;
+}
+
+.registerProgress {
+  color: #187189;
+}
+
+#progress3 {
+  text-align: center;
+}
+
+.customBtn {
+  width: 190px;
+}
+
+.progressTable {
+  width: 110%;
+}
+
+.featuresTable {
+  width: 100%;
+}
+
+.featuresCheck {
+  text-align: center;
+  color: #54B948;
+}
+
+.signUpText {
+  text-align: center;
+  color: grey;
+  font-weight: 100;
+  font-size: 1.1em;
 }
