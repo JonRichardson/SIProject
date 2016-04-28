@@ -2,9 +2,7 @@ $(document).ready(function(){
   // Function for the dropdown items on the inputPage
   $(function(){
     $("#dropdown1 li").click(function(){
-      $("#dropdown1 li").show();
-      $(this).closest('.btn-group').find(".btn:first-child").text($(this).text());
-      $(this).closest('.btn-group').find(".btn:first-child").val($(this).text());
+      $(this).closest('.btn-group').find(".btn:first-child").text($(this).text());     $(this).closest('.btn-group').find(".btn:first-child").val($(this).text());
       $('#dropdown1 li').dropdown('toggle');
     });
 
