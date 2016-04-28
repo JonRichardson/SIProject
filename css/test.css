@@ -172,16 +172,6 @@
   height: 45px;
 }
 
-td a {
-  color: grey;
-}
-
-td a:hover {
-  text-transform: full-width;
-  color: #187189;
-  text-decoration: none;
-}
-
 .leftColHeader {
   margin-left: 60px;
   font-weight: 500;
@@ -193,15 +183,22 @@ td a:hover {
   font-size: 15px;
 }
 
-.slideTest:hover {
-  transform: translate(10px, 0);
-  transition: 0.5s;
+.slideText:hover {
+  transform: translate(8px, 0);
+  transition: 0.3s;
+  text-transform: full-width;
+  color: #187189;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.slideTest {
+.slideText {
+  color: #686868;
+  font-size: 1em;
+  font-weight: 100;
   padding-top: 17px;
   padding-bottom: 17px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .rightTableRows {
@@ -386,7 +383,7 @@ td a:hover {
   padding-top: 10px;
   padding-bottom: 13px;
   padding-left: 35px;
-  transition: 0.8s;
+  transition: 0.3s;
 }
 
 .greyBox1.fadeOut, .greyBox2.fadeOut, .greyBox3.fadeOut {
@@ -399,7 +396,7 @@ td a:hover {
   font-size: 1em;
   text-align: center;
   padding-top: 10px;
-  transition: 0.8s;
+  transition: 0.3s;
 }
 
 .panelText1.fadeOut, .panelText2.fadeOut, .panelText3.fadeOut {
@@ -416,9 +413,9 @@ td a:hover {
 }
 
 .rotate{
-  -moz-transition: all 0.1s linear;
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .rotate.down{
@@ -447,4 +444,48 @@ td a:hover {
 
 #div1, #div2, #div3 {
   height: 450px;
+}
+
+.variableTable {
+  text-align: right;
+  margin-top: -6px;
+}
+
+.registerProgress {
+  color: #187189;
+}
+
+#progress3 {
+  text-align: center;
+}
+
+.customBtn {
+  width: 190px;
+}
+
+.progressTable {
+  width: 110%;
+}
+
+.featuresTable {
+  width: 100%;
+}
+
+.featuresCheck {
+  text-align: center;
+  color: #54B948;
+  font-size: 1.4em;
+  -webkit-text-stroke: 1px white;
+}
+
+.featuresChevron {
+  -webkit-text-stroke: 1.5px white;
+  padding-right: 5px;
+}
+
+.signUpText {
+  text-align: center;
+  color: grey;
+  font-weight: 100;
+  font-size: 1.1em;
 }

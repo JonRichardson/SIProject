@@ -1,10 +1,8 @@
 $(document).ready(function(){
-
+  // Function for the dropdown items on the inputPage
   $(function(){
     $("#dropdown1 li").click(function(){
-      $("#dropdown1 li").show();
-      $(this).closest('.btn-group').find(".btn:first-child").text($(this).text());
-      $(this).closest('.btn-group').find(".btn:first-child").val($(this).text());
+      $(this).closest('.btn-group').find(".btn:first-child").text($(this).text());     $(this).closest('.btn-group').find(".btn:first-child").val($(this).text());
       $('#dropdown1 li').dropdown('toggle');
     });
 
@@ -21,10 +19,12 @@ $(document).ready(function(){
     });
   });
 
+  // Function for the infoBubble hover animation on the registration page
   $(".info2").hover(function () {
     $(".info1").slideToggle("slow");
   });
 
+  // Functions for the box fade, text fade, and chevrons rotating on the indexPage
   $("#priorityOne").click(function(){
     $(".greyBox1").toggleClass("fadeOut");
     $(".panelText1").toggleClass("fadeOut");
@@ -52,6 +52,7 @@ $(document).ready(function(){
     $("#table2").fadeToggle("slow")
   });
 
+  // Function for the doughnut chart on the index2 page
   $(function () {
     var ctx = $("#myChart").get(0).getContext("2d");
   	var data = [
