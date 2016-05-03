@@ -176,7 +176,7 @@
           <div class="mapDiv2">
             <?php
               if ($_SESSION['input3'] == "Asia") {
-                  echo '<img id="map" src="images/asia_globe.png" height="280" width="280">';
+                  echo '<img id="map" src="images/asia.png" height="280" width="280">';
               } elseif ($_SESSION['input3'] == "EU") {
                   echo '<img id="map" src="images/eu.png" height="280" width="280">';
               }

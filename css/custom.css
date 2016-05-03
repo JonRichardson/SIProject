@@ -726,6 +726,20 @@
   text-align-last:center;
 }
 
-.opt {
-  color: grey;
+.newChevron1, .newChevron2, .newChevron3 {
+  color: #686868;
+  font-size: 1em;
+  text-align: right;
+  padding-right: 6px;
+  padding-left: 0px;
+}
+
+.newChevron1.hiddenChevron, .newChevron3.hiddenChevron {
+  visibility: hidden;
+  margin-left: -30px;
+}
+
+.newChevron2.hiddenChevron {
+  visibility: hidden;
+  margin-left: -25px;
 }

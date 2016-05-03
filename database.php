@@ -10,7 +10,7 @@
     }
 
   try {
-      $results = $db->query("SELECT * FROM manufacturer");
+      $results = $db->query("SELECT apparel FROM manufacturer WHERE region = 'Asia'");
   } catch (Exception $e) {
       echo "Not successful";
       exit;

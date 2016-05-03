@@ -18,18 +18,19 @@
   <body>
     <!-- This is the code for the onboarding form -->
     <div class="dropdown">
-      <form class="onboardForm" action="test.php" method="post" id="my_form">
+      <form class="onboardForm" action="index.php" method="post" id="my_form">
         <span class="fieldLabel">I am a </span>
         <div class="btn-group">
-          <select class="testForm" name="input1">
+          <select id="userInput1" class="testForm" name="input1">
             <option disabled selected value></option>
             <option class"opt" value="Manufacturer">Manufacturer</option>
             <option class"opt" value="Retailer">Retailer</option>
           </select>
+          <span class="glyphicon glyphicon-menu-down newChevron1"></span>
         </div>
         <span class="fieldLabel"> and I sell </span>
         <div class="btn-group">
-          <select class="testForm" name="input2">
+          <select id="userInput2" class="testForm" name="input2">
             <option disabled selected value></option>
             <option value="Apparel">Apparel</option>
             <option value="Consumer Goods">Consumer Goods</option>
@@ -37,16 +38,18 @@
             <option value="Aero & Defense">Aero & Defense</option>
             <option value="Industrial">Industrial</option>
           </select>
+          <span class="glyphicon glyphicon-menu-down newChevron2"></span>
         </div></br></br>
         <span class="fieldLabel">to customers in</span>
         <div class="btn-group">
-          <select class="testForm" name="input3">
+          <select id="userInput3" class="testForm" name="input3">
             <option disabled selected value></option>
             <option value="US & Canada">US & Canada</option>
             <option value="EU">EU</option>
             <option value="Asia">Asia</option>
             <option value="Rest of World">Rest of World</option>
           </select>
+          <span class="glyphicon glyphicon-menu-down newChevron3"></span>
         </div>
         <small class="period">.</small></br></br>
         <input id="submitBtn" class="getStartedBtn" type="submit" value="Get Started">

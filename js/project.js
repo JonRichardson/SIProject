@@ -48,6 +48,19 @@ $(document).ready(function(){
     $("#table2").fadeToggle("slow")
   });
 
+// Function to toggle the chevrons on the newInputPage
+  $("#userInput1").click(function(){
+    $(".newChevron1").toggleClass("hiddenChevron");
+  });
+
+  $("#userInput2").click(function(){
+    $(".newChevron2").toggleClass("hiddenChevron");
+  });
+
+  $("#userInput3").click(function(){
+    $(".newChevron3").toggleClass("hiddenChevron");
+  });
+
   // Function for the doughnut chart on the index2 page
   $(function () {
     var ctx = $("#myChart").get(0).getContext("2d");
