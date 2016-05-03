@@ -13,7 +13,6 @@
   color: #686868;
   text-align: center;
   appearance: none;
-  background:
 }
 
 .listItem {
@@ -95,7 +94,7 @@
 }
 .formLabel {
   color: #686868;
-  font-weight: 100; 
+  font-weight: 100;
 }
 
 .form-group {
@@ -707,4 +706,27 @@
   color: grey;
   font-weight: 100;
   font-size: 1.1em;
+}
+
+.testForm {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  line-height: 1.9;
+  font-size: 2em;
+  min-width: 200px;
+  text-align: center;
+  color: #1689e5;
+  font-weight: 100;
+  padding: 0px;
+  margin-top: -10px;
+  appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  text-align-last:center;
+}
+
+.opt {
+  color: grey;
 }

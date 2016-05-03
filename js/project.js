@@ -1,23 +1,19 @@
 $(document).ready(function(){
   // Function for the dropdown items on the inputPage
-  $(function(){
     $("#dropdown1 li").click(function(){
-      $(this).closest('.btn-group').find(".btn:first-child").text($(this).text());     $(this).closest('.btn-group').find(".btn:first-child").val($(this).text());
+      $(this).closest('.btn-group').find(".btn:first-child").text($(this).text());
       $('#dropdown1 li').dropdown('toggle');
     });
 
     $("#dropdown2 li").click(function(){
       $(this).closest('.btn-group').find(".btn:first-child").text($(this).text());
-      $(this).closest('.btn-group').find(".btn:first-child").val($(this).text());
       $('#dropdown1 li').dropdown('toggle');
     });
 
     $("#dropdown3 li").click(function(){
       $(this).closest('.btn-group').find(".btn:first-child").text($(this).text());
-      $(this).closest('.btn-group').find(".btn:first-child").val($(this).text());
       $('#dropdown3 li').dropdown('toggle');
     });
-  });
 
   // Function for the infoBubble hover animation on the registration page
   $(".info2").hover(function () {
