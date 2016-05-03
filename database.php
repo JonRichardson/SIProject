@@ -10,10 +10,12 @@
     }
 
   try {
-      $results = $db->query("SELECT region FROM manufacturer");
-      echo "Query successful";
+      $results = $db->query("SELECT * FROM manufacturer");
   } catch (Exception $e) {
       echo "Not successful";
       exit;
   }
+
+  var_dump($results->fetchAll());
+
 ?>
