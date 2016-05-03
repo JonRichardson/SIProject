@@ -1,3 +1,10 @@
+<?php
+  session_start();
+      $_SESSION['input1'] = $_POST['input1'];
+      $_SESSION['input2'] = $_POST['input2'];
+      $_SESSION['input3'] = $_POST['input3'];
+  ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -113,11 +120,17 @@
                 <div class="pull-right variableTable">
                   <table>
                     <tr>
-                      <td class="inputPageVariables">Manufacturer</td>
+                      <td class="inputPageVariables">
+                        <?php echo $_SESSION['input1'];?>
+                      </td>
                       <td></td>
-                      <td class="inputPageVariables">Electronics</td>
+                      <td class="inputPageVariables">
+                        <?php echo $_SESSION['input2'];?>
+                      </td>
                       <td></td>
-                      <td class="inputPageVariables">Asia</td>
+                      <td class="inputPageVariables">
+                        <?php echo $_SESSION['input3'];?>
+                      </td>
                       <td></td>
                     </tr>
                     <tr>
@@ -161,7 +174,19 @@
       <div id="collapseOne" class="panel-collapse collapse">
         <div class="panel-body fixed-panel">
           <div class="mapDiv2">
-            <img id="map" src="images/asia_globe.png" height="280" width="280">
+            <?php
+              if ($_SESSION['input3'] == "Asia") {
+                  echo '<img id="map" src="images/asia.png" height="280" width="280">';
+              } elseif ($_SESSION['input3'] == "EU") {
+                  echo '<img id="map" src="images/eu.png" height="280" width="280">';
+              }
+                elseif ($_SESSION['input3'] == "US & Canada") {
+                  echo '<img id="map" src="images/us-and-canada.png" height="280" width="280">';
+              }
+                elseif ($_SESSION['input3'] == "Rest of World") {
+                  echo '<img id="map" src="images/map.png" height="280" width="280">';
+              }
+            ?>
           </div>
           </br>
           </br>

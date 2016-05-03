@@ -11,20 +11,20 @@
     <!-- This is the stylesheet for Source Intelligence -->
     <link rel="stylesheet" type= "text/css" href = "css/app.css"/>
     <!-- This is the stylesheet for the registration form -->
-    <link rel="stylesheet" type= "text/css" href = "css/form.css"/>
+    <link rel="stylesheet" type= "text/css" href = "css/custom.css"/>
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
     <!-- This is the code for the onboarding form -->
     <div class="dropdown">
-      <form action="index.html" method="get">
+      <form class="onboardForm" action="index.html" method="get" id="my_form">
         <span class="fieldLabel">I am a </span>
         <div class="btn-group">
           <a id="input1" class="btn dropdown-toggle" data-toggle="dropdown" href="#">
             <span class="glyphicon glyphicon-menu-down"></span>
           </a>
-          <ul id="dropdown1" class="dropdown-menu">
+          <ul id="dropdown1" class="dropdown-menu dropdownOptions">
             <li class="listItem"><a href="#">Manufacturer</a></li>
             <li role="separator" class="divider"></li>
             <li class="listItem"><a href="#">Retailer</a></li>
@@ -35,7 +35,7 @@
           <a id="input2" class="btn dropdown-toggle" data-toggle="dropdown" href="#">
             <span class="glyphicon glyphicon-menu-down"></span>
           </a>
-          <ul id="dropdown2" class="dropdown-menu">
+          <ul id="dropdown2" class="dropdown-menu dropdownOptions">
             <li class="listItem"><a href="#">Apparel</a></li>
             <li role="separator" class="divider"></li>
             <li class="listItem"><a href="#">Consumer Goods</a></li>
@@ -52,7 +52,7 @@
           <a id="input3" class="btn dropdown-toggle" data-toggle="dropdown" href="#">
             <span class="glyphicon glyphicon-menu-down"></span>
           </a>
-          <ul id="dropdown3" class="dropdown-menu">
+          <ul id="dropdown3" class="dropdown-menu dropdownOptions">
             <li class="listItem"><a href="#">US & Canada</a></li>
             <li role="separator" class="divider"></li>
             <li class="listItem"><a href="#">EU</a></li>
@@ -62,10 +62,9 @@
             <li class="listItem"><a href="#">Rest of World</a></li>
           </ul>
         </div>
-        <small>.</small></br></br>
-        <input class="getStartedBtn" type="submit" value="Get Started">
+        <small class="period">.</small></br></br>
+        <input id="submitBtn" class="getStartedBtn" type="submit" value="Get Started">
       </form>
     </div>
-    <p id="testInput"></p>
   </body>
 </html>
