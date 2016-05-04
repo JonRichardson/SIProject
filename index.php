@@ -3,6 +3,9 @@
       $_SESSION['input1'] = $_POST['input1'];
       $_SESSION['input2'] = $_POST['input2'];
       $_SESSION['input3'] = $_POST['input3'];
+      $userInput1 = $_SESSION['input1'];
+      $userInput2 = $_SESSION['input2'];
+      $userInput3 = $_SESSION['input3'];
   ?>
 
 <!DOCTYPE html>
@@ -21,7 +24,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Source Intelligence Onboarding">
-    <meta name="author" content="Ramin Mesghali & John Richardson">
+    <meta name="author" content="Ramin Mesghali &amp; John Richardson">
 
     <title>Source Intelligence </title>
 
@@ -65,7 +68,7 @@
               <span class="caret"></span></a>
               <ul class="dropdown-menu navbarDropdown">
                 <li><a href="#">Resource Center</a></li>
-                <li><a href="#">Training & Certifiction</a></li>
+                <li><a href="#">Training &amp; Certifiction</a></li>
                 <li><a href="#">Restricted Substances</a></li>
                 <li><a href="#">Anti-Corruption</a></li>
                 <li><a href="#">Anti-Bribery</a></li>
@@ -86,7 +89,7 @@
       <tr>
         <td class="registerProgress">Goal Recommendations</td>
         <td>Goal Review</td>
-        <td id="progress3">Security & Submit</td>
+        <td id="progress3">Security &amp; Submit</td>
       </tr>
     </table>
     <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 16%;">
@@ -121,15 +124,15 @@
                   <table>
                     <tr>
                       <td class="inputPageVariables">
-                        <?php echo $_SESSION['input1'];?>
+                        <?php echo $userInput1;?>
                       </td>
                       <td></td>
                       <td class="inputPageVariables">
-                        <?php echo $_SESSION['input2'];?>
+                        <?php echo $userInput2;?>
                       </td>
                       <td></td>
                       <td class="inputPageVariables">
-                        <?php echo $_SESSION['input3'];?>
+                        <?php echo $userInput3;?>
                       </td>
                       <td></td>
                     </tr>
@@ -162,7 +165,7 @@
                 </div>
               </div>
               <div class="col-sm-6">
-                <h4 class="panelText1">Regulations to be concerned with as a Manufacturer in Asia</h4>
+                <h4 class="panelText1">Regulations to be concerned with as a <?php echo $userInput1;?> in <?php echo $userInput3;?></h4>
               </div>
               <div class="col-sm-2 panelChevron">
                 <i class="fa fa-chevron-down chevron1 rotate" aria-hidden="true"></i>
@@ -175,15 +178,16 @@
         <div class="panel-body fixed-panel">
           <div class="mapDiv2">
             <?php
-              if ($_SESSION['input3'] == "Asia") {
+              if ($userInput3 == "Asia") {
                   echo '<img id="map" src="images/asia.png" height="280" width="280">';
-              } elseif ($_SESSION['input3'] == "EU") {
+              }
+                elseif ($userInput3 == "EU") {
                   echo '<img id="map" src="images/eu.png" height="280" width="280">';
               }
-                elseif ($_SESSION['input3'] == "US & Canada") {
+                elseif ($userInput3 == "US & Canada") {
                   echo '<img id="map" src="images/us-and-canada.png" height="280" width="280">';
               }
-                elseif ($_SESSION['input3'] == "Rest of World") {
+                elseif ($userInput3 == "Rest of World") {
                   echo '<img id="map" src="images/map.png" height="280" width="280">';
               }
             ?>
@@ -192,11 +196,61 @@
           </br>
           <span class="regulations">Regulations you should be concerned with:</span></br>
           <span class="industry">Based on your industry, who you sell to and where you primarily do business, your company's biggest compliance concern should be:</span>
-            <ul class="regList">
-              <li><em>China's GB18401-2003</em></li>
-              <li><em>Japan's Household Goods Quality Labeling Act</em></li>
-              <!-- <li class="moreItems"><a href="register.html" data-toggle="modal" data-target="#myModal"> + 6 more items ...</a></li> -->
-            </ul>
+            <p>
+              <?php
+              require('database.php');
+              if ($userInput2 == "Apparel"){
+                try {
+                    $results = $db->query("SELECT apparel FROM manufacturer WHERE region = '$userInput3'");
+                } catch (Exception $e) {
+                    echo "Not successful";
+                    exit;
+                }
+                $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                echo $regulations['apparel'];
+              }
+                elseif ($userInput2 == "Consumer Goods") {
+                  try {
+                      $results = $db->query("SELECT consumerGoods FROM manufacturer WHERE region = '$userInput3'");
+                  } catch (Exception $e) {
+                      echo "Not successful";
+                      exit;
+                  }
+                  $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                  echo $regulations['consumerGoods'];
+                }
+                elseif ($userInput2 == "Electronics") {
+                  try {
+                      $results = $db->query("SELECT electronics FROM manufacturer WHERE region = '$userInput3'");
+                  } catch (Exception $e) {
+                      echo "Not successful";
+                      exit;
+                  }
+                  $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                  echo $regulations['electronics'];
+                }
+                elseif ($userInput2 == "Aero & Defense") {
+                  try {
+                      $results = $db->query("SELECT aeroDefense FROM manufacturer WHERE region = '$userInput3'");
+                  } catch (Exception $e) {
+                      echo "Not successful";
+                      exit;
+                  }
+                  $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                  echo $regulations['aeroDefense'];
+                }
+                elseif ($userInput2 == "Industrial") {
+                  try {
+                      $results = $db->query("SELECT industrial FROM manufacturer WHERE region = '$userInput3'");
+                  } catch (Exception $e) {
+                      echo "Not successful";
+                      exit;
+                  }
+                  $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                  echo $regulations['industrial'];
+                }
+              ?>
+            </p>
             </br>
             </br>
           <div class="button">
