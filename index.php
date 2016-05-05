@@ -1,12 +1,12 @@
 <?php
   session_start();
-      $_SESSION['input1'] = $_POST['input1'];
-      $_SESSION['input2'] = $_POST['input2'];
-      $_SESSION['input3'] = $_POST['input3'];
-      $userInput1 = $_SESSION['input1'];
-      $userInput2 = $_SESSION['input2'];
-      $userInput3 = $_SESSION['input3'];
-  ?>
+    $userInput1 = $_POST['input1'];
+    $userInput2 = $_POST['input2'];
+    $userInput3 = $_POST['input3'];
+    setcookie("input1", $userInput1);
+    setcookie("input2", $userInput2);
+    setcookie("input3", $userInput3);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -198,7 +198,7 @@
           <span class="industry">Based on your industry, who you sell to and where you primarily do business, your company's biggest compliance concern should be:</span>
             <p>
               <?php
-              require('database.php');
+              require('db/database.php');
               if ($userInput2 == "Apparel"){
                 try {
                     $results = $db->query("SELECT apparel FROM manufacturer WHERE region = '$userInput3'");
@@ -254,7 +254,7 @@
             </br>
             </br>
           <div class="button">
-            <button class="btn btn-primary customBtn" type="submit" onclick="location.href='index2.html'">Select this goal</button>
+            <button class="btn btn-primary customBtn" type="submit" onclick="location.href='index2.php'">Select this goal</button>
           </div>
         </div>
       </div>

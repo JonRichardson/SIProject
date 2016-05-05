@@ -132,7 +132,7 @@
                         </td>
                         <td></td>
                         <td class="inputPageVariables">
-                          <?php echo "hello"?>
+                          <?php echo $input3;?>
                         </td>
                         <td></td>
                       </tr>
