@@ -199,15 +199,25 @@
             <p>
               <?php
               require('db/database.php');
-              if ($userInput2 == "Apparel"){
+              if ($userInput1 == "Retailer") {
                 try {
-                    $results = $db->query("SELECT apparel FROM manufacturer WHERE region = '$userInput3'");
+                    $results = $db->query("SELECT regulation FROM retailer WHERE region = '$userInput3'");
                 } catch (Exception $e) {
                     echo "Not successful";
                     exit;
                 }
                 $regulations = $results->fetch(PDO::FETCH_ASSOC);
-                echo $regulations['apparel'];
+                echo $regulations['regulation'];
+              }
+                elseif ($userInput2 == "Apparel"){
+                  try {
+                      $results = $db->query("SELECT apparel FROM manufacturer WHERE region = '$userInput3'");
+                  } catch (Exception $e) {
+                      echo "Not successful";
+                      exit;
+                  }
+                  $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                  echo $regulations['apparel'];
               }
                 elseif ($userInput2 == "Consumer Goods") {
                   try {
