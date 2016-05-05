@@ -203,6 +203,7 @@
 
 .registerProgress {
   color: #187189;
+  padding-bottom: 13px;
 }
 
 #progress3 {
@@ -251,7 +252,7 @@
   background: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 1px;
-  height: 38px;
+  height: 51px;
   font-size: 15px;
   box-shadow: none;
   padding-left: 5%;
@@ -266,6 +267,7 @@
 
 .index2Progress {
   color: #187189;
+  padding-bottom: 13px;
 }
 
 /* This places the buttons for selction and reading more in the center */
@@ -675,6 +677,7 @@
 
 #progress3 {
   text-align: center;
+  padding-bottom: 13px;
 }
 
 .customBtn {
@@ -742,4 +745,8 @@
 .newChevron2.hiddenChevron {
   visibility: hidden;
   margin-left: -25px;
+}
+
+.hiddenOpt {
+  display: none;
 }
