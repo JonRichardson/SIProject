@@ -7,14 +7,13 @@
     setcookie("input2", $userInput2);
     setcookie("input3", $userInput3);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- This is the stylesheet for Source Intelligence -->
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <!-- This is the stylesheet for us -->
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/customLess.css">
     <!-- These are the scripts for jquery/javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/project.js"></script>
@@ -176,19 +175,19 @@
       </a>
       <div id="collapseOne" class="panel-collapse collapse">
         <div class="panel-body fixed-panel">
-          <div class="mapDiv2">
+          <div class="mapDiv">
             <?php
               if ($userInput3 == "Asia") {
-                  echo '<img id="map" src="images/asia.png" height="280" width="280">';
+                  echo '<img class="mapImage" src="images/asia.png">';
               }
                 elseif ($userInput3 == "EU") {
-                  echo '<img id="map" src="images/eu.png" height="280" width="280">';
+                  echo '<img class="mapImage" src="images/eu.png">';
               }
                 elseif ($userInput3 == "US & Canada") {
-                  echo '<img id="map" src="images/us-and-canada.png" height="280" width="280">';
+                  echo '<img class="mapImage" src="images/us-and-canada.png">';
               }
                 elseif ($userInput3 == "Rest of World") {
-                  echo '<img id="map" src="images/map.png" height="280" width="280">';
+                  echo '<img class="mapImage" src="images/map.png">';
               }
             ?>
           </div>
