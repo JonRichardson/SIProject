@@ -99,7 +99,6 @@
 
 .form-group {
   text-align: left;
-  padding-left; 10px;
   font-weight: 100;
 }
 
@@ -350,32 +349,21 @@
   font-weight: bold;
 }
 
-/* This is for the round map picture for results pages */
 .mapDiv {
-  background-color: #f9f9f9 ;
-  border-radius: 150px;
   display: block;
   float: left;
   height: 300px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 30px;
   max-width: 300px;
-  padding: 36.8098px 1%;
-}
-
-.mapDiv2 {
-  border-radius: 150px;
-  display: block;
-  float: left;
-  height: 300px;
   margin-top: -30px;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 30px;
-  max-width: 300px;
   padding: 36.8098px 1%;
 }
+ .mapImage {
+  height: 280px;
+  width: 280px;
+ }
 
 #myChart {
   width: 280px;

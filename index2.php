@@ -3,14 +3,13 @@
   $input2 = $_COOKIE["input2"];
   $input3 = $_COOKIE["input3"];
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- This is the stylesheet for Source Intelligence -->
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <!-- This is the our stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/customLess.css">
     <!-- This is the script for jquery use -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- jQuery library -->
