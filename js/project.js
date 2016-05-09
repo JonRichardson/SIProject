@@ -1,20 +1,4 @@
 $(document).ready(function(){
-  // Function for the dropdown items on the inputPage
-    $("#dropdown1 li").click(function(){
-      $(this).closest('.btn-group').find(".btn:first-child").text($(this).text());
-      $('#dropdown1 li').dropdown('toggle');
-    });
-
-    $("#dropdown2 li").click(function(){
-      $(this).closest('.btn-group').find(".btn:first-child").text($(this).text());
-      $('#dropdown1 li').dropdown('toggle');
-    });
-
-    $("#dropdown3 li").click(function(){
-      $(this).closest('.btn-group').find(".btn:first-child").text($(this).text());
-      $('#dropdown3 li').dropdown('toggle');
-    });
-
   // Function for the infoBubble hover animation on the registration page
   $(".info2").hover(function () {
     $(".info1").slideToggle("slow");
@@ -39,26 +23,17 @@ $(document).ready(function(){
     $(".chevron3").toggleClass("down");
   });
 
-// The following two scripts are for modifying data in Results Page 2
-  $("#overview").click(function () {
-    $("#div2").fadeToggle("slow")
-
-  });
-  $("#details").click(function () {
-    $("#table2").fadeToggle("slow")
-  });
-
 // Function to toggle the chevrons on the newInputPage
   $("#userInput1").click(function(){
-    $(".newChevron1").toggleClass("hiddenChevron");
+    $(".newChevron1").hide("hiddenChevron");
   });
 
   $("#userInput2").click(function(){
-    $(".newChevron2").toggleClass("hiddenChevron");
+    $(".newChevron2").hide("hiddenChevron");
   });
 
   $("#userInput3").click(function(){
-    $(".newChevron3").toggleClass("hiddenChevron");
+    $(".newChevron3").hide("hiddenChevron");
   });
 
   // Function for the doughnut chart on the index2 page

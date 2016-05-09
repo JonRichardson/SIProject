@@ -567,15 +567,19 @@
   margin-left: 50px;
 }
 
+.fa-list-alt.panelIcon {
+  color: #ECECEC;
+}
+
 .mainPanelIconLabel {
   padding-left: 18px;
 }
 
 .mainPanelLabel {
-  color: black;
-  font-size: 1.2em;
+  color: #ECECEC;
+  font-size: 1.6em;
   font-weight: 100;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .accordion-toggle.yourPlan span {
