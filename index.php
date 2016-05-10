@@ -62,18 +62,8 @@
                 <li><a href="#">Forced Labor</a></li>
               </ul>
             </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">For Suppliers
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu navbarDropdown">
-                <li><a href="#">Resource Center</a></li>
-                <li><a href="#">Training &amp; Certifiction</a></li>
-                <li><a href="#">Restricted Substances</a></li>
-                <li><a href="#">Anti-Corruption</a></li>
-                <li><a href="#">Anti-Bribery</a></li>
-                <li><a href="#">Human Trafficking</a></li>
-                <li><a href="#">Forced Labor</a></li>
-              </ul>
+            <li>
+              <a href="register.html">Sign Up</a>
             </li>
             <li><a href="../navbar-fixed-top/">Customer Service</a></li>
           </ul>
@@ -97,7 +87,7 @@
   </div>
   <br>
   <div class="head">
-    <h1 class="headingh1"> Select your first transparency goal to begin </h1>
+    <h1 class="headingh1"> Select your first compliance goal to begin </h1>
     <h4 class="headingh4"> We've recommended goals based on your industry and where you sell to.</h4>
     </br>
   </div>
@@ -120,30 +110,14 @@
               <div class="col-sm-6">
                 </br>
                 <div class="pull-right variableTable">
-                  <table>
-                    <tr>
-                      <td class="inputPageVariables">
-                        <?php echo $userInput1;?>
-                      </td>
-                      <td></td>
-                      <td class="inputPageVariables">
-                        <?php echo $userInput2;?>
-                      </td>
-                      <td></td>
-                      <td class="inputPageVariables">
-                        <?php echo $userInput3;?>
-                      </td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th class="tableLabels">Type</th>
-                      <th> </th>
-                      <th class="tableLabels">Industry</th>
-                      <th> </th>
-                      <th class="tableLabels">Location</th>
-                      <th> </th>
-                    </tr>
-                  </table>
+                  <span class="inputPageVariables">
+                    <?php echo $userInput1;?></span>
+                  <span class="inputPageVariables1">of</span>
+                  <span class="inputPageVariables">
+                    <?php echo $userInput2;?></span>
+                  <span class="inputPageVariables1">in</span>
+                  <span class="inputPageVariables">
+                    <?php echo $userInput3;?></span>
                 </div>
               </div>
             </div>
@@ -160,11 +134,11 @@
                 <i class="fa fa-chain-broken panelIcon" aria-hidden="true"></i>
                 <div class="iconLabel">
                   <span>Priority 1</span>
-                  <p class="priorityName">Regulations</p>
+                  <p class="priorityName">Chemical Management</p>
                 </div>
               </div>
               <div class="col-sm-6">
-                <h4 class="panelText1">Regulations to be concerned with as a <?php echo $userInput1;?> in <?php echo $userInput3;?></h4>
+                <h4 class="panelText1">Chemical regulations to be concerned with</h4>
               </div>
               <div class="col-sm-2 panelChevron">
                 <i class="fa fa-chevron-down chevron1 rotate" aria-hidden="true"></i>
@@ -309,11 +283,11 @@
                 <i class="fa fa-envira panelIcon" aria-hidden="true"></i>
                 <div class="iconLabel">
                   <span>Priority 3</span>
-                  <p class="priorityName">Smelter Verification</p>
+                  <p class="priorityName">Human Trafficking</p>
                 </div>
               </div>
               <div class="col-sm-6">
-                <h4 class="panelText3">Verify the Smelters associated with your Manufacturer</h4>
+                <h4 class="panelText3">Concerns related to Human Trafficking</h4>
               </div>
               <div class="col-sm-2 panelChevron">
                 <i class="fa fa-chevron-down chevron3 rotate" aria-hidden="true"></i>

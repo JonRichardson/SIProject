@@ -62,18 +62,8 @@
                 <li><a href="#">Forced Labor</a></li>
               </ul>
             </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">For Suppliers
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu navbarDropdown">
-                <li><a href="#">Resource Center</a></li>
-                <li><a href="#">Training &amp; Certifiction</a></li>
-                <li><a href="#">Restricted Substances</a></li>
-                <li><a href="#">Anti-Corruption</a></li>
-                <li><a href="#">Anti-Bribery</a></li>
-                <li><a href="#">Human Trafficking</a></li>
-                <li><a href="#">Forced Labor</a></li>
-              </ul>
+            <li>
+              <a href="register.html">Sign Up</a>
             </li>
             <li><a href="../navbar-fixed-top/">Customer Service</a></li>
           </ul>
@@ -98,7 +88,7 @@
     <br>
 <!-- message over panel -->
     <div class="head">
-      <h1 class="headingh1"> Review your first transparency goal to begin </h1>
+      <h1 class="headingh1"> Review your first compliance goal to begin </h1>
       <h4 class="headingh4"> Your first goal is set up – you can make changes or add more goals after signing up.</h4></br>
     </div>
 <!-- Collapsable panels below -->
@@ -120,30 +110,14 @@
                 <div class="col-sm-6">
                 </br>
                   <div class="pull-right variableTable">
-                    <table>
-                      <tr>
-                        <td class="inputPageVariables">
-                          <?php echo $input1;?>
-                        </td>
-                        <td></td>
-                        <td class="inputPageVariables">
-                          <?php echo $input2;?>
-                        </td>
-                        <td></td>
-                        <td class="inputPageVariables">
-                          <?php echo $input3;?>
-                        </td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <th class="tableLabels">Type</th>
-                        <th> </th>
-                        <th class="tableLabels">Industry</th>
-                        <th> </th>
-                        <th class="tableLabels">Location</th>
-                        <th> </th>
-                      </tr>
-                    </table>
+                    <span class="inputPageVariables">
+                      <?php echo $input1;?></span>
+                    <span class="inputPageVariables1">of</span>
+                    <span class="inputPageVariables">
+                      <?php echo $input2;?></span>
+                    <span class="inputPageVariables1">in</span>
+                    <span class="inputPageVariables">
+                      <?php echo $input3;?></span>
                   </div>
                 </div>
               </h4>
