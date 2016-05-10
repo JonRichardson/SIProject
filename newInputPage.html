@@ -10,12 +10,50 @@
     <script type="text/javascript" src="js/project.js"></script>
     <!-- This is the stylesheet for Source Intelligence -->
     <link rel="stylesheet" type= "text/css" href = "css/app.css"/>
-    <!-- This is the stylesheet for the registration form -->
+    <!-- This is the custom stylesheet -->
     <link rel="stylesheet" type= "text/css" href = "css/customLess.css"/>
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <a  href="http://www.sourceintelligence.com/"><img class="siLogo" src="images/si.png" alt="Source"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Enterprise Solutions
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu navbarDropdown">
+                <li><a href="#">Conflict Minerals</a></li>
+                <li><a href="#">Smeleter Verification</a></li>
+                <li><a href="#">Restricted Substances</a></li>
+                <li><a href="#">Anti-Corruption</a></li>
+                <li><a href="#">Anti-Bribery</a></li>
+                <li><a href="#">Human Trafficking</a></li>
+                <li><a href="#">Forced Labor</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="register.html">Sign Up</a>
+            </li>
+            <li><a href="../navbar-fixed-top/">Customer Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
     <!-- This is the code for the onboarding form -->
     <div class="dropdown">
       <form class="onboardForm" action="index.php" method="post" id="my_form">
@@ -54,6 +92,17 @@
         <small class="period">.</small></br></br>
         <input id="submitBtn" class="getStartedBtn" type="submit" value="Get Started">
       </form>
+    </div>
+    <!-- This is the sticky footer -->
+    <div class="footer navbar-fixed-bottom">
+      <div class="container">
+        <ul>
+          <li><a href="http://www.sourceintelligence.com/privacy-policy/"> Privacy</a></li>
+          <li><a href="http://www.sourceintelligence.com/terms-of-use/"> Terms of Use</a></li>
+          <li><a href="http://www.sourceintelligence.com/about/"> About Us</a></th>
+          <li><a href="http://www.sourceintelligence.com/contact-us/"> Contact Us</a></li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

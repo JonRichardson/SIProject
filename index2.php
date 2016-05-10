@@ -43,11 +43,6 @@
           <a  href="http://www.sourceintelligence.com/"><img class="siLogo" src="images/si.png" alt="Source"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Enterprise Solutions
@@ -62,18 +57,8 @@
                 <li><a href="#">Forced Labor</a></li>
               </ul>
             </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">For Suppliers
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu navbarDropdown">
-                <li><a href="#">Resource Center</a></li>
-                <li><a href="#">Training &amp; Certifiction</a></li>
-                <li><a href="#">Restricted Substances</a></li>
-                <li><a href="#">Anti-Corruption</a></li>
-                <li><a href="#">Anti-Bribery</a></li>
-                <li><a href="#">Human Trafficking</a></li>
-                <li><a href="#">Forced Labor</a></li>
-              </ul>
+            <li>
+              <a href="register.html">Sign Up</a>
             </li>
             <li><a href="../navbar-fixed-top/">Customer Service</a></li>
           </ul>
@@ -81,7 +66,7 @@
       </div>
     </nav>
     </br>
-  </br>
+    </br>
 <!-- Progress Bar at 66% -->
     <div class="progress">
       <table class="progressTable">
@@ -96,9 +81,9 @@
         </div>
     </div>
     <br>
-<!-- message over panel -->
+<!-- Main Header -->
     <div class="head">
-      <h1 class="headingh1"> Review your first transparency goal to begin </h1>
+      <h1 class="headingh1"> Review your first compliance goal to begin </h1>
       <h4 class="headingh4"> Your first goal is set up – you can make changes or add more goals after signing up.</h4></br>
     </div>
 <!-- Collapsable panels below -->
@@ -120,30 +105,9 @@
                 <div class="col-sm-6">
                 </br>
                   <div class="pull-right variableTable">
-                    <table>
-                      <tr>
-                        <td class="inputPageVariables">
-                          <?php echo $input1;?>
-                        </td>
-                        <td></td>
-                        <td class="inputPageVariables">
-                          <?php echo $input2;?>
-                        </td>
-                        <td></td>
-                        <td class="inputPageVariables">
-                          <?php echo $input3;?>
-                        </td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <th class="tableLabels">Type</th>
-                        <th> </th>
-                        <th class="tableLabels">Industry</th>
-                        <th> </th>
-                        <th class="tableLabels">Location</th>
-                        <th> </th>
-                      </tr>
-                    </table>
+                    <span class="inputPageVariables">
+                      <?php echo $input1;?> of <?php echo $input2;?> in <?php echo $input3;?>
+                    </span>
                   </div>
                 </div>
               </h4>
@@ -158,26 +122,23 @@
                   <div class="col-sm-5 infoLeft">
                     <span class="leftColHeader">Recommended Allocation   <a href="#" data-toggle="tooltip" title="Some helpful message here"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></span></br>
                     </br>
+                    <!-- Canvas for Chart.js -->
                     <canvas id="myChart"></canvas>
                     <div class="donut-inner">
                       <h5>47 / 60 st</h5>
                       <span>(30 / 25 st)</span>
                     </div>
                     <br>
-                    <div class="detailsBtn">
-                      <button class="btn btn-primary customBtn" type="submit">Overview</button>
-                      <button class="btn btn-primary customBtn" data-toggle="collapse" data-target="#demo"  type="submit">Details</button>
-                    </div>
                   </div>
                   <div class="col-sm-5 infoRight">
                     <table class="featuresTable" rules= "rows">
                       <thead>
-                        <span class="tableHeader">Source Intelligence Features</span>
+                        <span class="tableHeader">Features</span>
                       </thead>
                       <tr class="rightTableRows">
                         <td class="slideText">
                           <i class="fa fa-chevron-right featuresChevron" aria-hidden="true"></i>
-                          Conflict Minerals
+                          24 Hour Phone Support
                         </td>
                         <td class="featuresCheck">
                           <i class="fa fa-check" aria-hidden="true"></i>
@@ -187,7 +148,7 @@
                       <tr class="rightTableRows">
                         <td class="slideText">
                           <i class="fa fa-chevron-right featuresChevron" aria-hidden="true"></i>
-                          Smelter Verification
+                          Email Alerts
                         </td>
                         <td class="featuresCheck">
                           <i class="fa fa-check" aria-hidden="true"></i>
@@ -197,7 +158,7 @@
                       <tr class="rightTableRows">
                         <td class="slideText">
                           <i class="fa fa-chevron-right featuresChevron" aria-hidden="true"></i>
-                          Restricted Substances
+                          Compliance Status with Selected Regulations
                         </td>
                         <td class="featuresCheck">
                           <i class="fa fa-check" aria-hidden="true"></i>
@@ -207,7 +168,7 @@
                       <tr class="rightTableRows">
                         <td class="slideText">
                           <i class="fa fa-chevron-right featuresChevron" aria-hidden="true"></i>
-                          Anti-Corruption
+                          Unlimited Parts
                         </td>
                         <td class="featuresCheck">
                           <i class="fa fa-check" aria-hidden="true"></i>
@@ -217,7 +178,7 @@
                       <tr class="rightTableRows">
                         <td class="slideText">
                           <i class="fa fa-chevron-right featuresChevron" aria-hidden="true"></i>
-                          Anti-Bribery
+                          Unlimited Supplier Contacts
                         </td>
                         <td class="featuresCheck">
                           <i class="fa fa-check" aria-hidden="true"></i>
@@ -227,17 +188,7 @@
                       <tr class="rightTableRows">
                         <td class="slideText">
                           <i class="fa fa-chevron-right featuresChevron" aria-hidden="true"></i>
-                          Human Trafficking
-                        </td>
-                        <td class="featuresCheck">
-                          <i class="fa fa-check" aria-hidden="true"></i>
-                        </td>
-                        <td><hr></td>
-                      </tr>
-                      <tr class="rightTableRows">
-                        <td class="slideText">
-                          <i class="fa fa-chevron-right featuresChevron" aria-hidden="true"></i>
-                          Forced Labor
+                          Over 20 State, Federal and International Regulations
                         </td>
                         <td class="featuresCheck">
                           <i class="fa fa-check" aria-hidden="true"></i>
@@ -251,9 +202,6 @@
                 </div>
               </div>
               </br>
-              <div id="demo" class="collapse">
-              Chocolate donut cake oat cake pie chocolate cake. Cookie fruitcake icing cheesecake. Jujubes dragée croissant croissant gummies sweet jelly brownie cake. Cupcake gummi bears soufflé tootsie roll. Liquorice sweet pie cake chocolate bar chocolate cake marzipan pastry. Candy chocolate cake pudding candy canes pie. Marzipan pastry icing jelly-o gingerbread biscuit croissant dragée biscuit. Chocolate toffee wafer muffin candy bonbon bear claw. Pastry cotton candy jelly-o. Jelly-o apple pie chupa chups cake jelly cake. Halvah dragée sweet roll sweet roll cheesecake sugar plum wafer halvah. Danish bonbon pie sugar plum cheesecake jelly. Marshmallow marshmallow wafer chupa chups cheesecake. Halvah gummies tootsie roll cookie chocolate cake bonbon.
-              </div>
             </div>
           </div>
         </div>
