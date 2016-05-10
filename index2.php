@@ -123,10 +123,11 @@
                     <span class="leftColHeader">Recommended Allocation   <a href="#" data-toggle="tooltip" title="Some helpful message here"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></span></br>
                     </br>
                     <!-- Canvas for Chart.js -->
-                    <canvas id="myChart"></canvas>
-                    <div class="donut-inner">
-                      <h5>47 / 60 st</h5>
-                      <span>(30 / 25 st)</span>
+                    <div id="cf">
+                      <img class="bottom" src="images/asia.png"/>
+                      <img class="top" src="images/eu.png" />
+                      <img class="top" src="images/map.png" />
+                      <img class="top" src="images/us-and-canada.png" />
                     </div>
                     <br>
                   </div>

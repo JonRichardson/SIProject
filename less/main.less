@@ -752,3 +752,59 @@
 .hiddenOpt {
   display: none;
 }
+
+// @keyframes example {
+//   0%   {background-color: green;}
+//   33%  {background-color: yellow;}
+//   66%  {background-color: blue;}
+//   99% {background-color: green;}
+// }
+//
+// .animation {
+//   width: 280px;
+//   height: 280px;
+//   margin-bottom: 40px;
+//   padding-top: 20px;
+//   padding-left: 25px;
+//   background-color: green;
+//   animation-name: example;
+//   animation-duration: 5s;
+//   animation-iteration-count: 1;
+// }
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  height: 280px;
+  width: 280px;
+  position:absolute;
+  opacity: 0;
+  -webkit-animation: imageAnimation 16s linear infinite 0s;
+}
+
+#cf > img:nth-child(2)  {
+    background-image: url(images/eu.png);
+    -webkit-animation-delay: 4s;
+}
+#cf > img:nth-child(3) {
+    background-image: url(images/us-and-canada.png);
+    -webkit-animation-delay: 8s;
+}
+#cf > img:nth-child(4) {
+    background-image: url(images/map.png);
+    -webkit-animation-delay: 12s;
+}
+
+@-webkit-keyframes imageAnimation {
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1; }
+    17% { opacity: 1 -webkit-animation-timing-function: ease-out; }
+    40% { opacity: 0 }
+    100% { opacity: 0 }
+}
