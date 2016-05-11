@@ -61,7 +61,6 @@
             <li>
               <a href="register.html">Sign Up</a>
             </li>
-            <li><a href="../navbar-fixed-top/">Customer Service</a></li>
           </ul>
         </div>
       </div>
@@ -129,7 +128,7 @@
                   </div>
                 </div>
                 <div class="col-sm-6">
-                  <h4 class="panelText1">Chemical regulations to be concerned with</h4>
+                  <h4 class="panelText1">Chemical regulations to be concerned with as a <?php echo $userInput1;?> in <?php echo $userInput3;?></h4>
                 </div>
                 <div class="col-sm-2 panelChevron">
                   <i class="fa fa-chevron-down chevron1 rotate" aria-hidden="true"></i>

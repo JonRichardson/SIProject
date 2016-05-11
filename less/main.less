@@ -390,7 +390,7 @@
 }
 
 .leftColHeader {
-  margin-left: 60px;
+  margin-left: 80px;
   font-weight: 500;
   font-size: 15px;
 }
@@ -557,12 +557,34 @@
   text-indent: -37px;
 }
 
+.infoLeftAndRight{
+  padding: 0px;
+}
+
+.contHeight {
+  height: 350px;
+}
+
+.regulationsHeader {
+  text-align: center;
+  font-weight: 500;
+}
+
 .col-sm-5.infoLeft {
   border-right: 1px solid #ddd;
   width: 456px;
+  height: 485px;
+  padding-top: 25px;
 }
+
 .col-sm-5.infoRight {
   margin-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.index2Regulations {
+  padding-bottom: 10px;
 }
 
 .fa-list-alt.panelIcon {
@@ -751,4 +773,38 @@
 
 .hiddenOpt {
   display: none;
+}
+
+#cf {
+  padding-left: 32px;
+  padding-top: 32px;
+}
+
+#cf img {
+  height: 280px;
+  width: 280px;
+  position:absolute;
+  opacity: 0;
+  -webkit-animation: imageAnimation 16s linear infinite 0s;
+}
+
+#cf > img:nth-child(2)  {
+  background-image: url(images/test_2.png);
+  -webkit-animation-delay: 4s;
+}
+#cf > img:nth-child(3) {
+  background-image: url(images/test_3.png);
+  -webkit-animation-delay: 8s;
+}
+#cf > img:nth-child(4) {
+  background-image: url(images/test_4.png);
+  -webkit-animation-delay: 12s;
+}
+
+@-webkit-keyframes imageAnimation {
+  0% { opacity: 0; -webkit-animation-timing-function: ease-in; }
+  8% { opacity: 1; -webkit-animation-timing-function: ease-out; }
+  17% { opacity: 1 }
+  25% { opacity: 0 }
+  100% { opacity: 0 }
 }
