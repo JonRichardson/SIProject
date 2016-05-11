@@ -1,7 +1,7 @@
 <?php
-  $input1 = $_COOKIE["input1"];
-  $input2 = $_COOKIE["input2"];
-  $input3 = $_COOKIE["input3"];
+  $userInput1 = $_COOKIE["input1"];
+  $userInput2 = $_COOKIE["input2"];
+  $userInput3 = $_COOKIE["input3"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -60,7 +60,6 @@
             <li>
               <a href="register.html">Sign Up</a>
             </li>
-            <li><a href="../navbar-fixed-top/">Customer Service</a></li>
           </ul>
         </div>
       </div>
@@ -106,7 +105,7 @@
                 </br>
                   <div class="pull-right variableTable">
                     <span class="inputPageVariables">
-                      <?php echo $input1;?> of <?php echo $input2;?> in <?php echo $input3;?>
+                      <?php echo $userInput1;?> of <?php echo $userInput2;?> in <?php echo $userInput3;?>
                     </span>
                   </div>
                 </div>
@@ -114,24 +113,114 @@
             </div>
           </div>
           <div id="collapseTwo" class="panel-collapse collapse in">
-            <div class="panel-body">
-              <div class="container">
+            <div class="panel-body infoLeftAndRight">
+              <div class="container contHeight">
                 <div class="row">
                   <div class="col-sm-1">
                   </div>
                   <div class="col-sm-5 infoLeft">
                     <span class="leftColHeader">Recommended Allocation   <a href="#" data-toggle="tooltip" title="Some helpful message here"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></span></br>
                     </br>
-                    <!-- Canvas for Chart.js -->
                     <div id="cf">
-                      <img class="bottom" src="images/asia.png"/>
-                      <img class="top" src="images/eu.png" />
-                      <img class="top" src="images/map.png" />
-                      <img class="top" src="images/us-and-canada.png" />
+                      <img src="images/test_1.png"/>
+                      <img src="images/test_2.png" />
+                      <img src="images/test_3.png" />
+                      <img src="images/test_4.png" />
                     </div>
                     <br>
                   </div>
                   <div class="col-sm-5 infoRight">
+                    <h4 class="regulationsHeader">Selected Regulations</h4>
+                    <p class="index2Regulations">
+                      <?php
+                      // Database queries based on the users input
+                      require('db/database.php');
+                      if ($userInput1 == "Retailer") {
+                        try {
+                            $results = $db->query("SELECT regulation FROM retailer WHERE region = '$userInput3'");
+                        } catch (Exception $e) {
+                            echo "Not successful";
+                            exit;
+                        }
+                        $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                        $regulations = $regulations['regulation'];
+                        $regulations = explode(",",$regulations);
+                        foreach ($regulations as $str) {
+                          echo "<li>".$str."</li>";
+                        }
+                      }
+                        elseif ($userInput2 == "Apparel"){
+                          try {
+                              $results = $db->query("SELECT apparel FROM manufacturer WHERE region = '$userInput3'");
+                          } catch (Exception $e) {
+                              echo "Not successful";
+                              exit;
+                          }
+                          $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                          $regulations = $regulations['apparel'];
+                          $regulations = explode(",",$regulations);
+                          foreach ($regulations as $str) {
+                            echo "<li>".$str."</li>";
+                          }
+                        }
+                        elseif ($userInput2 == "Consumer Goods") {
+                          try {
+                              $results = $db->query("SELECT consumerGoods FROM manufacturer WHERE region = '$userInput3'");
+                          } catch (Exception $e) {
+                              echo "Not successful";
+                              exit;
+                          }
+                          $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                          $regulations = $regulations['consumerGoods'];
+                          $regulations = explode(",",$regulations);
+                          foreach ($regulations as $str) {
+                            echo "<li>".$str."</li>";
+                          }
+                        }
+                        elseif ($userInput2 == "Electronics") {
+                          try {
+                              $results = $db->query("SELECT electronics FROM manufacturer WHERE region = '$userInput3'");
+                          } catch (Exception $e) {
+                              echo "Not successful";
+                              exit;
+                          }
+                          $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                          $regulations = $regulations['electronics'];
+                          $regulations = explode(",",$regulations);
+                          foreach ($regulations as $str) {
+                            echo "<li>".$str."</li>";
+                          }
+                        }
+                        elseif ($userInput2 == "Aero & Defense") {
+                          try {
+                              $results = $db->query("SELECT aeroDefense FROM manufacturer WHERE region = '$userInput3'");
+                          } catch (Exception $e) {
+                              echo "Not successful";
+                              exit;
+                          }
+                          $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                          $regulations = $regulations['aeroDefense'];
+                          $regulations = explode(",",$regulations);
+                          foreach ($regulations as $str) {
+                            echo "<li>".$str."</li>";
+                          }
+                        }
+                        elseif ($userInput2 == "Industrial") {
+                          try {
+                              $results = $db->query("SELECT industrial FROM manufacturer WHERE region = '$userInput3'");
+                          } catch (Exception $e) {
+                              echo "Not successful";
+                              exit;
+                          }
+                          $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                          $regulations = $regulations['industrial'];
+                          $regulations = explode(",",$regulations);
+                          foreach ($regulations as $str) {
+                            echo "<li>".$str."</li>";
+                          }
+                        }
+                      ?>
+                    </p>
                     <table class="featuresTable" rules= "rows">
                       <thead>
                         <span class="tableHeader">Features</span>
