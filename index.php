@@ -61,7 +61,6 @@
             <li>
               <a href="register.html">Sign Up</a>
             </li>
-            <li><a href="../navbar-fixed-top/">Customer Service</a></li>
           </ul>
         </div>
       </div>
