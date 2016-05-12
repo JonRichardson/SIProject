@@ -770,8 +770,9 @@
   width: 280px;
   position:absolute;
   opacity: 0;
-  -webkit-animation: imageAnimation 16s linear 0s;
-  -webkit-animation-iteration-count: 2;
+  -webkit-animation: imageAnimation 16s linear;
+  // -webkit-animation-iteration-count: 2;
+  -webkit-animation-fill-mode: forwards;
 }
 
 #cf > img:nth-child(2)  {
@@ -789,8 +790,8 @@
 
 @-webkit-keyframes imageAnimation {
   0% { opacity: 0; -webkit-animation-timing-function: ease-in; }
-  8% { opacity: 1; -webkit-animation-timing-function: ease-out; }
-  17% { opacity: 1 }
-  25% { opacity: 0 }
-  100% { opacity: 0 }
+  8% { opacity: 1; }
+  17% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
 }
