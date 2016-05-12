@@ -776,15 +776,12 @@
 }
 
 #cf > img:nth-child(2)  {
-  background-image: url(images/test_2.png);
   -webkit-animation-delay: 4s;
 }
 #cf > img:nth-child(3) {
-  background-image: url(images/test_3.png);
   -webkit-animation-delay: 8s;
 }
 #cf > img:nth-child(4) {
-  background-image: url(images/test_4.png);
   -webkit-animation-delay: 12s;
 }
 
@@ -793,5 +790,47 @@
   8% { opacity: 1; }
   17% { opacity: 1; }
   25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.leftColHeader span {
+  position:absolute;
+  opacity: 0;
+  -webkit-animation: textAnimation 16s linear;
+  // -webkit-animation-iteration-count: 2;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.leftColHeader > span:nth-child(2)  {
+  -webkit-animation-delay: 4s;
+}
+.leftColHeader > span:nth-child(3) {
+  -webkit-animation-delay: 8s;
+}
+.leftColHeader > span:nth-child(4) {
+  -webkit-animation-delay: 12s;
+}
+
+@-webkit-keyframes textAnimation {
+  0% { opacity: 0; -webkit-animation-timing-function: ease-in; }
+  8% { opacity: 1; -webkit-animation-timing-function: ease-out; }
+  17% { opacity: 1; }
+  25% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.leftColHeader span:nth-child(4) {
+  position:absolute;
+  opacity: 0;
+  -webkit-animation: fourthTextAnimation 14s linear;
+  // -webkit-animation-iteration-count: 2;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fourthTextAnimation {
+  0% { opacity: 0; }
+  8% { opacity: 0; }
+  17% { opacity: 0; }
+  80% { opacity: 0; -webkit-animation-timing-function: ease-in; }
   100% { opacity: 1; }
 }

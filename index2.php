@@ -123,7 +123,13 @@
                   <div class="col-sm-1">
                   </div>
                   <div class="col-sm-5 infoLeft">
-                    <span class="leftColHeader">Recommended Allocation   <a href="#" data-toggle="tooltip" title="Some helpful message here"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></span></br>
+                    <div class="leftColHeader">
+                      <span>Test 1</span>
+                      <span>Test 2</span>
+                      <span>Test 3</span>
+                      <span>Test 4</span>
+                    </div>
+                    </br>
                     </br>
                     <!-- This displays the user animation of four images -->
                     <div id="cf">
