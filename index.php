@@ -41,6 +41,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"   data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
           </button>
+          <!-- Company Logo in NavBar -->
           <a  href="http://www.sourceintelligence.com/"><img class="siLogo" src="images/si.png" alt="Source"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -67,7 +68,7 @@
     </nav>
     </br>
     <br>
-<!-- Progress Bar at 33% -->
+<!-- Progress Bar at 33% Stage1-->
     <div class="progress">
       <table class="progressTable">
         <tr>
@@ -105,6 +106,7 @@
                 <div class="col-sm-6">
                   </br>
                   <div class="pull-right variableTable">
+                    <!-- This displays the user inputs from the onboarding page -->
                     <span class="inputPageVariables">
                       <?php echo $userInput1;?> of <?php echo $userInput2;?> in <?php echo $userInput3;?>
                     </span>
@@ -128,6 +130,7 @@
                   </div>
                 </div>
                 <div class="col-sm-6">
+                  <!-- The PHP code here displays users inputs into first priority goal -->
                   <h4 class="panelText1">Chemical regulations to be concerned with as a <?php echo $userInput1;?> in <?php echo $userInput3;?></h4>
                 </div>
                 <div class="col-sm-2 panelChevron">
@@ -139,6 +142,7 @@
         </a>
         <div id="collapseOne" class="panel-collapse collapse">
           <div class="panel-body fixed-panel">
+            <!-- This displays a different globe image for each region selected by user -->
             <div class="mapDiv">
               <?php
                 if ($userInput3 == "Asia") {
@@ -162,6 +166,7 @@
               <p>
                 <?php
                 // Database queries based on the users input
+                // Displays regulations matching user inputs
                 require('db/database.php');
                 if ($userInput1 == "Retailer") {
                   try {
@@ -257,6 +262,7 @@
             </h4>
           </div>
         </a>
+        <!-- Ready for Content -->
         <div id="collapse2" class="panel-collapse collapse">
           <div class="panel-body">Sign up now to review these goals</div>
         </div>
@@ -285,6 +291,7 @@
             </h4>
           </div>
         </a>
+        <!--  Ready for content-->
           <div id="collapse3" class="panel-collapse collapse">
             <div class="panel-body">Sign up now to review these goals</div>
           </div>
