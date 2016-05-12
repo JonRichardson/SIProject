@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- This is the script for Ajax use -->
+    <!-- This is the script for jQuery use -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <!-- These are bootstrap scripts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -23,6 +23,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
           </button>
+          <!-- Company Logo in NavBar -->
           <a  href="http://www.sourceintelligence.com/"><img class="siLogo" src="images/si.png" alt="Source"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -58,6 +59,7 @@
       <form class="onboardForm" action="index.php" method="post" id="my_form">
         <span class="fieldLabel">I am a </span>
         <div class="btn-group">
+          <!-- First dropdown in onboarding form -->
           <select id="userInput1" class="testForm" name="input1" required>
             <option selected disabled hidden class="hiddenOpt" value=''></option>
             <option class"opt" value="Manufacturer">Manufacturer</option>
@@ -67,6 +69,7 @@
         </div>
         <span class="fieldLabel"> and I sell </span>
         <div class="btn-group">
+          <!-- Second dropdown in onboarding form -->
           <select id="userInput2" class="testForm" name="input2" required>
             <option selected disabled hidden class="hiddenOpt" value=''></option>
             <option value="Apparel">Apparel</option>
@@ -79,6 +82,7 @@
         </div></br></br>
         <span class="fieldLabel">to customers in</span>
         <div class="btn-group">
+          <!-- Third dropdown in onboarding form -->
           <select id="userInput3" class="testForm" name="input3" required>
             <option selected disabled hidden class="hiddenOpt" value=''></option>
             <option value="US & Canada">US & Canada</option>

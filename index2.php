@@ -1,4 +1,5 @@
 <?php
+// Starting session to pull user data from the cookie
   $userInput1 = $_COOKIE["input1"];
   $userInput2 = $_COOKIE["input2"];
   $userInput3 = $_COOKIE["input3"];
@@ -29,6 +30,7 @@
 
     <!-- Bootstrap core CSS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- This script gives you access to font-awesome icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   </head>
 
@@ -40,6 +42,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
           </button>
+          <!-- Company Logo in NavBar -->
           <a  href="http://www.sourceintelligence.com/"><img class="siLogo" src="images/si.png" alt="Source"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -66,7 +69,7 @@
     </nav>
     </br>
     </br>
-<!-- Progress Bar at 66% -->
+<!-- Progress Bar at 66% Stage 2 -->
     <div class="progress">
       <table class="progressTable">
         <tr>
@@ -104,6 +107,7 @@
                 <div class="col-sm-6">
                 </br>
                   <div class="pull-right variableTable">
+                    <!-- This displays the user inputs from the onboarding page -->
                     <span class="inputPageVariables">
                       <?php echo $userInput1;?> of <?php echo $userInput2;?> in <?php echo $userInput3;?>
                     </span>
@@ -121,6 +125,7 @@
                   <div class="col-sm-5 infoLeft">
                     <span class="leftColHeader">Recommended Allocation   <a href="#" data-toggle="tooltip" title="Some helpful message here"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a></span></br>
                     </br>
+                    <!-- This displays the user animation of four images -->
                     <div id="cf">
                       <img src="images/test_1.png"/>
                       <img src="images/test_2.png" />
@@ -134,6 +139,7 @@
                     <p class="index2Regulations">
                       <?php
                       // Database queries based on the users input
+                      // Displays regulations matching user inputs
                       require('db/database.php');
                       if ($userInput1 == "Retailer") {
                         try {
@@ -221,6 +227,7 @@
                         }
                       ?>
                     </p>
+                    <!-- This table contains links to Source Intelligence -->
                     <table class="featuresTable" rules= "rows">
                       <thead>
                         <span class="tableHeader">Features</span>
