@@ -789,15 +789,15 @@
 }
 
 #cf > img:nth-child(2)  {
-  background-image: url(images/eu.png);
+  background-image: url(images/test_2.png);
   -webkit-animation-delay: 4s;
 }
 #cf > img:nth-child(3) {
-  background-image: url(images/us-and-canada.png);
+  background-image: url(images/test_3.png);
   -webkit-animation-delay: 8s;
 }
 #cf > img:nth-child(4) {
-  background-image: url(images/map.png);
+  background-image: url(images/test_4.png);
   -webkit-animation-delay: 12s;
 }
 
