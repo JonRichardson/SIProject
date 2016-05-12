@@ -1,5 +1,5 @@
 <?php
-// Starting session to pull user data from the cookie
+// Pull user data from the cookie and store it as a variable
   $userInput1 = $_COOKIE["input1"];
   $userInput2 = $_COOKIE["input2"];
   $userInput3 = $_COOKIE["input3"];
@@ -128,106 +128,108 @@
                     <!-- This displays the user animation of four images -->
                     <div id="cf">
                       <img src="images/test_1.png"/>
-                      <img src="images/test_2.png" />
-                      <img src="images/test_3.png" />
-                      <img src="images/test_4.png" />
+                      <img src="images/test_2.png"/>
+                      <img src="images/test_3.png"/>
+                      <img src="images/test_4.png"/>
                     </div>
                     <br>
                   </div>
                   <div class="col-sm-5 infoRight">
                     <h4 class="regulationsHeader">Selected Regulations</h4>
-                    <p class="index2Regulations">
-                      <?php
-                      // Database queries based on the users input
-                      // Displays regulations matching user inputs
-                      require('db/database.php');
-                      if ($userInput1 == "Retailer") {
-                        try {
-                            $results = $db->query("SELECT regulation FROM retailer WHERE region = '$userInput3'");
-                        } catch (Exception $e) {
-                            echo "Not successful";
-                            exit;
-                        }
-                        $regulations = $results->fetch(PDO::FETCH_ASSOC);
-                        $regulations = $regulations['regulation'];
-                        $regulations = explode(",",$regulations);
-                        foreach ($regulations as $str) {
-                          echo "<li>".$str."</li>";
-                        }
-                      }
-                        elseif ($userInput2 == "Apparel"){
+                      <div class="regulationList">
+                        <?php
+                        // Database queries based on the users input
+                        // Displays regulations matching user inputs
+                        require('db/database.php');
+                        if ($userInput1 == "Retailer") {
                           try {
-                              $results = $db->query("SELECT apparel FROM manufacturer WHERE region = '$userInput3'");
+                              $results = $db->query("SELECT regulation FROM retailer WHERE region = '$userInput3'");
                           } catch (Exception $e) {
                               echo "Not successful";
                               exit;
                           }
                           $regulations = $results->fetch(PDO::FETCH_ASSOC);
-                          $regulations = $regulations['apparel'];
+                          $regulations = $regulations['regulation'];
                           $regulations = explode(",",$regulations);
+                          // Loops through string to display regulations in list
                           foreach ($regulations as $str) {
                             echo "<li>".$str."</li>";
                           }
                         }
-                        elseif ($userInput2 == "Consumer Goods") {
-                          try {
-                              $results = $db->query("SELECT consumerGoods FROM manufacturer WHERE region = '$userInput3'");
-                          } catch (Exception $e) {
-                              echo "Not successful";
-                              exit;
+                          elseif ($userInput2 == "Apparel"){
+                            try {
+                                $results = $db->query("SELECT apparel FROM manufacturer WHERE region = '$userInput3'");
+                            } catch (Exception $e) {
+                                echo "Not successful";
+                                exit;
+                            }
+                            $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                            $regulations = $regulations['apparel'];
+                            $regulations = explode(",",$regulations);
+                            foreach ($regulations as $str) {
+                              echo "<li>".$str."</li>";
+                            }
                           }
-                          $regulations = $results->fetch(PDO::FETCH_ASSOC);
-                          $regulations = $regulations['consumerGoods'];
-                          $regulations = explode(",",$regulations);
-                          foreach ($regulations as $str) {
-                            echo "<li>".$str."</li>";
+                          elseif ($userInput2 == "Consumer Goods") {
+                            try {
+                                $results = $db->query("SELECT consumerGoods FROM manufacturer WHERE region = '$userInput3'");
+                            } catch (Exception $e) {
+                                echo "Not successful";
+                                exit;
+                            }
+                            $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                            $regulations = $regulations['consumerGoods'];
+                            $regulations = explode(",",$regulations);
+                            foreach ($regulations as $str) {
+                              echo "<li>".$str."</li>";
+                            }
                           }
-                        }
-                        elseif ($userInput2 == "Electronics") {
-                          try {
-                              $results = $db->query("SELECT electronics FROM manufacturer WHERE region = '$userInput3'");
-                          } catch (Exception $e) {
-                              echo "Not successful";
-                              exit;
+                          elseif ($userInput2 == "Electronics") {
+                            try {
+                                $results = $db->query("SELECT electronics FROM manufacturer WHERE region = '$userInput3'");
+                            } catch (Exception $e) {
+                                echo "Not successful";
+                                exit;
+                            }
+                            $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                            $regulations = $regulations['electronics'];
+                            $regulations = explode(",",$regulations);
+                            foreach ($regulations as $str) {
+                              echo "<li>".$str."</li>";
+                            }
                           }
-                          $regulations = $results->fetch(PDO::FETCH_ASSOC);
-                          $regulations = $regulations['electronics'];
-                          $regulations = explode(",",$regulations);
-                          foreach ($regulations as $str) {
-                            echo "<li>".$str."</li>";
+                          elseif ($userInput2 == "Aero & Defense") {
+                            try {
+                                $results = $db->query("SELECT aeroDefense FROM manufacturer WHERE region = '$userInput3'");
+                            } catch (Exception $e) {
+                                echo "Not successful";
+                                exit;
+                            }
+                            $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                            $regulations = $regulations['aeroDefense'];
+                            $regulations = explode(",",$regulations);
+                            foreach ($regulations as $str) {
+                              echo "<li>".$str."</li>";
+                            }
                           }
-                        }
-                        elseif ($userInput2 == "Aero & Defense") {
-                          try {
-                              $results = $db->query("SELECT aeroDefense FROM manufacturer WHERE region = '$userInput3'");
-                          } catch (Exception $e) {
-                              echo "Not successful";
-                              exit;
+                          elseif ($userInput2 == "Industrial") {
+                            try {
+                                $results = $db->query("SELECT industrial FROM manufacturer WHERE region = '$userInput3'");
+                            } catch (Exception $e) {
+                                echo "Not successful";
+                                exit;
+                            }
+                            $regulations = $results->fetch(PDO::FETCH_ASSOC);
+                            $regulations = $regulations['industrial'];
+                            $regulations = explode(",",$regulations);
+                            foreach ($regulations as $str) {
+                              echo "<li>".$str."</li>";
+                            }
                           }
-                          $regulations = $results->fetch(PDO::FETCH_ASSOC);
-                          $regulations = $regulations['aeroDefense'];
-                          $regulations = explode(",",$regulations);
-                          foreach ($regulations as $str) {
-                            echo "<li>".$str."</li>";
-                          }
-                        }
-                        elseif ($userInput2 == "Industrial") {
-                          try {
-                              $results = $db->query("SELECT industrial FROM manufacturer WHERE region = '$userInput3'");
-                          } catch (Exception $e) {
-                              echo "Not successful";
-                              exit;
-                          }
-                          $regulations = $results->fetch(PDO::FETCH_ASSOC);
-                          $regulations = $regulations['industrial'];
-                          $regulations = explode(",",$regulations);
-                          foreach ($regulations as $str) {
-                            echo "<li>".$str."</li>";
-                          }
-                        }
-                      ?>
-                    </p>
-                    <!-- This table contains links to Source Intelligence -->
+                        ?>
+                      </div>
+                      <br>
+                    <!-- Table for Source Intelligence features-->
                     <table class="featuresTable" rules= "rows">
                       <thead>
                         <span class="tableHeader">Features</span>

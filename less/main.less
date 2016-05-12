@@ -215,8 +215,6 @@
   float: left;
 }
 
-/*Test.css*/
-
 .siLogo {
   width: 104px;
   height: 41px;
@@ -271,7 +269,7 @@
   padding-bottom: 13px;
 }
 
-/* This places the buttons for selction and reading more in the center */
+/* This places the buttons for selection and reading more in the center */
 .button {
   text-align: center;
 }
@@ -365,8 +363,8 @@
   height: 300px;
   max-width: 300px;
   margin-top: -30px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
   margin-bottom: 30px;
   padding: 36.8098px 1%;
 }
@@ -397,7 +395,7 @@
 .tableHeader {
   margin-left: 192px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .slideText:hover {
@@ -422,8 +420,6 @@
 .rightTableRows {
   border-bottom: 1px solid #ddd;
 }
-
-/* @@@@@@@@@@@@ Everything below this point is for the navbar @@@@@@@@@@@@  */
 
 /* This lets you hover over the dropdowns for functionality */
 .dropdown:hover .dropdown-menu.navbarDropdown {
@@ -568,12 +564,18 @@
 .regulationsHeader {
   text-align: center;
   font-weight: 500;
+  padding-bottom: 5px;
+  margin-top: 0px;
+}
+
+.regulationList {
+  font-weight: 300;
 }
 
 .col-sm-5.infoLeft {
   border-right: 1px solid #ddd;
   width: 456px;
-  height: 485px;
+  height: 535px;
   padding-top: 25px;
 }
 
@@ -581,10 +583,6 @@
   margin-left: 50px;
   padding-top: 25px;
   padding-bottom: 30px;
-}
-
-.index2Regulations {
-  padding-bottom: 10px;
 }
 
 .fa-list-alt.panelIcon {
@@ -667,19 +665,6 @@
   -moz-transform:rotate(180deg);
   -webkit-transform:rotate(180deg);
   transform:rotate(180deg);
-}
-
-.donut-inner {
-  margin-top: -190px;
-  margin-bottom: 150px;
-  padding-left: 124px;
-}
-.donut-inner h5 {
-  margin-bottom: 5px;
-  margin-top: 0;
-}
-.donut-inner span {
-  font-size: 12px;
 }
 
 .panel-default.priorityPanels {
@@ -774,7 +759,7 @@
 .hiddenOpt {
   display: none;
 }
-
+// css animation for the four images on the index2 page
 #cf {
   padding-left: 32px;
   padding-top: 32px;
@@ -785,7 +770,8 @@
   width: 280px;
   position:absolute;
   opacity: 0;
-  -webkit-animation: imageAnimation 16s linear infinite 0s;
+  -webkit-animation: imageAnimation 16s linear 0s;
+  -webkit-animation-iteration-count: 2;
 }
 
 #cf > img:nth-child(2)  {

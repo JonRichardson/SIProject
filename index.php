@@ -159,8 +159,8 @@
                 }
               ?>
             </div>
-            </br>
-            </br>
+            <br>
+            <br>
             <span class="regulations">Regulations you should be concerned with:</span></br>
             <span class="industry">Based on your industry and where you sell into, your company's first compliance concern should be:</span>
               <p>
